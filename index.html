@@ -70,69 +70,96 @@
         </div>
     </header>
 
-    <!-- Hero Section (Generous whitespace, elegant typography, high-end editorial) -->
-    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 pb-32 overflow-hidden bg-white border-b border-stone-200">
+    <!-- Hero Section (Split-screen, Editorial layout with pristine tropical golf course photography) -->
+    <section class="relative min-h-[90vh] bg-white border-b border-stone-200 flex items-center">
         <!-- Minimal background architectural lines -->
-        <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute inset-0 opacity-[0.02] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:24px_24px]"></div>
         
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <!-- Sleek Badge -->
-            <div class="inline-flex items-center space-x-2 border border-stone-300 bg-[#FAF8F5] px-4 py-1.5 mb-8">
-                <span class="flex h-2 w-2 relative">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-playaOrange opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-playaOrange"></span>
-                </span>
-                <span class="text-[10px] font-black tracking-widest uppercase text-stone-800">Limited-Release Room Block</span>
-            </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 w-full relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Editorial Copy -->
+                <div class="lg:col-span-7 text-left space-y-8">
+                    <!-- Sleek Badge -->
+                    <div class="inline-flex items-center space-x-2 border border-stone-300 bg-[#FAF8F5] px-4 py-1.5">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-playaOrange opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-playaOrange"></span>
+                        </span>
+                        <span class="text-[10px] font-black tracking-widest uppercase text-stone-800">Limited-Release Room Block</span>
+                    </div>
 
-            <!-- Main Heading with Editorial Serif -->
-            <h1 class="font-serif text-5xl md:text-8xl font-normal tracking-tight leading-none text-stone-950 mb-6">
-                Perez en la <span class="italic text-playaOrange">Playa</span>
-            </h1>
-            
-            <!-- Subtitle -->
-            <p class="font-sans font-bold tracking-widest uppercase text-sm md:text-lg text-breezyLightGreen mb-10">
-                The Breezy Playa Invitational &middot; Riviera Maya
-            </p>
+                    <!-- Main Heading with Editorial Serif -->
+                    <h1 class="font-serif text-5xl md:text-7xl xl:text-8xl font-normal tracking-tight leading-none text-stone-950">
+                        Perez en la <span class="italic text-playaOrange">Playa</span>
+                    </h1>
+                    
+                    <!-- Subtitle -->
+                    <p class="font-sans font-bold tracking-widest uppercase text-xs md:text-sm text-breezyLightGreen">
+                        The Breezy Playa Invitational &middot; Riviera Maya, Mexico
+                    </p>
 
-            <!-- Refined copy in authentic BDS Voice -->
-            <p class="max-w-3xl mx-auto text-stone-600 text-base md:text-xl mb-12 font-normal leading-relaxed">
-                Fellas, lock in. We are pairing the legendary ball-striking, wedge-spinning energy of <strong class="text-stone-900 font-semibold">Fat Perez</strong> with four nights of absolute paradise under the stars with <strong class="text-stone-900 font-semibold">Widespread Panic</strong>. Unlimited dining, premium pours, coastal breeze, and a legendary 18-hole scramble in the Mexican sun. <span class="italic font-serif text-playaOrange">Have an absolute day!</span>
-            </p>
+                    <!-- Refined copy in authentic BDS Voice -->
+                    <p class="text-stone-600 text-sm md:text-lg font-normal leading-relaxed max-w-2xl">
+                        Fellas, lock in. We are pairing the legendary ball-striking, wedge-spinning energy of <strong class="text-stone-900 font-semibold">Fat Perez</strong> with four nights of absolute paradise under the stars with <strong class="text-stone-900 font-semibold">Widespread Panic</strong>. Unlimited dining, premium pours, coastal breeze, and a legendary 18-hole scramble in the Mexican sun. <span class="italic font-serif text-playaOrange">Have an absolute day!</span>
+                    </p>
 
-            <!-- Minimalist Editorial CTAs -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#booking" class="w-full sm:w-auto bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
-                    Reserve Your Space
-                </a>
-                <a href="#itinerary" class="w-full sm:w-auto border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
-                    The Gameplan
-                </a>
-            </div>
+                    <!-- Minimalist Editorial CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#booking" class="text-center bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                            Reserve Your Space
+                        </a>
+                        <a href="#itinerary" class="text-center border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                            The Gameplan
+                        </a>
+                    </div>
 
-            <!-- Features Banner (Crisp borders, clean boxes) -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24 pt-10 border-t border-stone-200">
-                <div class="text-center px-4">
-                    <div class="text-2xl font-serif font-bold text-stone-950">18-HOLE</div>
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Playa Scramble</div>
+                    <!-- Features Quick List -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-stone-150">
+                        <div>
+                            <div class="text-xl font-serif font-bold text-stone-950">18-HOLE</div>
+                            <div class="text-[9px] text-stone-500 font-bold uppercase tracking-widest mt-1">Playa Scramble</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-serif font-bold text-stone-950">4 NIGHTS</div>
+                            <div class="text-[9px] text-stone-500 font-bold uppercase tracking-widest mt-1">Widespread Panic</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-serif font-bold text-stone-950">100%</div>
+                            <div class="text-[9px] text-stone-500 font-bold uppercase tracking-widest mt-1">All-Inclusive</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-serif font-bold text-stone-950">EXCLUSIVE</div>
+                            <div class="text-[9px] text-stone-500 font-bold uppercase tracking-widest mt-1">Limited Block</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center px-4 border-l border-stone-200">
-                    <div class="text-2xl font-serif font-bold text-stone-950">4 NIGHTS</div>
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Widespread Panic</div>
+
+                <!-- Right Column: Dramatic Golf Course Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] w-full bg-stone-100 border border-stone-200 overflow-hidden relative group">
+                        <!-- High Quality Tropical Oceanfront Golf Green -->
+                        <img 
+                            src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1000&q=80" 
+                            alt="Tropical oceanfront golf green"
+                            class="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition duration-500 ease-in-out"
+                            onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'"
+                        />
+                        <div class="absolute inset-0 bg-stone-900/5 group-hover:bg-transparent transition duration-500"></div>
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 border border-stone-200 text-left">
+                            <span class="text-[9px] font-bold text-playaOrange tracking-widest uppercase block mb-1">Featured Course</span>
+                            <span class="font-serif text-sm font-semibold text-stone-900">Hard Rock Riviera Maya Championship Course</span>
+                        </div>
+                    </div>
+                    <!-- Minimal accent box behind image -->
+                    <div class="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-stone-300 -z-10"></div>
                 </div>
-                <div class="text-center px-4 border-l border-stone-200">
-                    <div class="text-2xl font-serif font-bold text-stone-950">100%</div>
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">All-Inclusive Luxury</div>
-                </div>
-                <div class="text-center px-4 border-l border-stone-200">
-                    <div class="text-2xl font-serif font-bold text-stone-950">EXCLUSIVE</div>
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Limited Room Block</div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- The Vibe Section (Prisitne light boxes, beautiful alignment) -->
+    <!-- The Vibe Section (Prisitin light cards with stunning experiential photography headers) -->
     <section id="the-concept" class="bg-[#FAF8F5] py-28 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-20">
@@ -147,38 +174,63 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Visual Feature Stack -->
                 <div class="space-y-8">
-                    <!-- Cards are styled with flat white backgrounds, thin slate-200 borders, and black opacity icons -->
-                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="p-3 bg-stone-100 text-stone-800">
-                                <i class="fa-solid fa-golf-ball-tee text-xl opacity-75"></i>
-                            </div>
-                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Day: The Breezy Invitationals</h3>
+                    <!-- Breezy Invitationals Card -->
+                    <div class="bg-white border border-stone-200 shadow-sm relative transition hover:shadow-md overflow-hidden">
+                        <!-- High Quality Stock image of a pristine golf course close up -->
+                        <div class="h-48 overflow-hidden relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=800&q=80" 
+                                alt="Pristine golf ball and putting pin setup"
+                                class="w-full h-full object-cover grayscale-[10%]"
+                                onerror="this.src='https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80'"
+                            />
+                            <div class="absolute inset-0 bg-stone-900/10"></div>
                         </div>
-                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
-                            Tee it up with Fat Perez on pristine, ocean-side championship holes. Expect legendary custom wedge clinics (watch him throw darts in real-time), putting face-offs, and a premier 18-hole scramble. Exceptional chirping, cold drinks, and high-quality golf.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">18-Hole Hard Rock Golf</span>
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Wedge Clinic with FP</span>
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Tequila & Cigar Stations</span>
+                        <div class="p-8">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="p-3 bg-stone-100 text-stone-800">
+                                    <i class="fa-solid fa-golf-ball-tee text-xl opacity-75"></i>
+                                </div>
+                                <h3 class="font-serif text-2xl font-normal text-stone-950">By Day: The Breezy Invitationals</h3>
+                            </div>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Tee it up with Fat Perez on pristine, ocean-side championship holes. Expect legendary custom wedge clinics (watch him throw darts in real-time), putting face-offs, and a premier 18-hole scramble. Exceptional chirping, cold drinks, and high-quality golf.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">18-Hole Hard Rock Golf</span>
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Wedge Clinic with FP</span>
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Tequila & Cigar Stations</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="p-3 bg-stone-100 text-stone-800">
-                                <i class="fa-solid fa-guitar text-xl opacity-75"></i>
-                            </div>
-                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Night: Panic en la Playa</h3>
+                    <!-- Widespread stage Access Card -->
+                    <div class="bg-white border border-stone-200 shadow-sm relative transition hover:shadow-md overflow-hidden">
+                        <!-- High Quality Live concert lights image -->
+                        <div class="h-48 overflow-hidden relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" 
+                                alt="Music stage lights and performance under the stars"
+                                class="w-full h-full object-cover grayscale-[10%]"
+                                onerror="this.src='https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80'"
+                            />
+                            <div class="absolute inset-0 bg-stone-900/10"></div>
                         </div>
-                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
-                            Step off the course and head straight to the concert courtyard. Watch Widespread Panic perform four spectacular full shows right on the ocean’s edge. No transit, no lines, no hassle. Pure musical magic combined with impeccable all-inclusive service.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">4 Nights of Widespread Panic</span>
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Beachfront Stage Access</span>
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Late Night Jams</span>
+                        <div class="p-8">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="p-3 bg-stone-100 text-stone-800">
+                                    <i class="fa-solid fa-guitar text-xl opacity-75"></i>
+                                </div>
+                                <h3 class="font-serif text-2xl font-normal text-stone-950">By Night: Panic en la Playa</h3>
+                            </div>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Step off the course and head straight to the concert courtyard. Watch Widespread Panic perform four spectacular full shows right on the ocean’s edge. No transit, no lines, no hassle. Pure musical magic combined with impeccable all-inclusive service.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">4 Nights of Widespread Panic</span>
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Beachfront Stage Access</span>
+                                <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Late Night Jams</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,6 +247,26 @@
                             "I've played some pretty epic setups, but hitting a crisp wedge over a lagoon, sipping a cold drink, and knowing I have Widespread Panic waiting on the beach in three hours? Fellas, that is how you have a day."
                         </p>
                         <p class="text-[10px] font-bold tracking-widest uppercase text-stone-500">— Fat Perez, Host & Commissioner</p>
+                    </div>
+
+                    <!-- Small Side Gallery showing premium food and drinks -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="aspect-video bg-stone-100 border border-stone-200 overflow-hidden relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80" 
+                                alt="Premium beachside cocktail"
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80'"
+                            />
+                        </div>
+                        <div class="aspect-video bg-stone-100 border border-stone-200 overflow-hidden relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=400&q=80" 
+                                alt="Resort layout and pool"
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80'"
+                            />
+                        </div>
                     </div>
 
                     <div class="bg-[#FAF8F5] p-6 border border-stone-200">
@@ -881,6 +953,7 @@
             updatePricing();
         }
 
+        // Toggle add-ons
         function toggleAddOn() {
             addOnClubsChecked = document.getElementById('add-on-clubs').checked;
             addOnCigarChecked = document.getElementById('add-on-cigar').checked;
