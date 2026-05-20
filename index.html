@@ -1,939 +1,932 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2820
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perez en la Playa - The Breezy Playa Invitational</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat (Sporty) & Playfair Display (Premium/Festival) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Sports/Music Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        breezyGreen: '#1b4d3e',
+                        breezyLightGreen: '#2a5c4a',
+                        playaTeal: '#0f766e',
+                        playaOrange: '#c2410c', // Elegant burnt orange
+                        playaClay: '#78350f',
+                        sandBg: '#FAF8F5',     // Soft editorial sand
+                        luxuryCream: '#f4f1ea', // Cream card fill
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#FAF8F5] text-stone-900 font-sans antialiased overflow-x-hidden selection:bg-breezyGreen selection:text-white">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Perez en la Playa - The Breezy Playa Invitational</title>\
-    <!-- Tailwind CSS -->\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <!-- Google Fonts: Montserrat (Sporty) & Playfair Display (Premium/Festival) -->\
-    <link rel="preconnect" href="https://fonts.googleapis.com">\
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">\
-    <!-- FontAwesome for Sports/Music Icons -->\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
-    \
-    <script>\
-        tailwind.config = \{\
-            theme: \{\
-                extend: \{\
-                    fontFamily: \{\
-                        sans: ['Montserrat', 'sans-serif'],\
-                        serif: ['Playfair Display', 'serif'],\
-                    \},\
-                    colors: \{\
-                        breezyGreen: '#1b4d3e',\
-                        breezyLightGreen: '#2a5c4a',\
-                        playaTeal: '#0f766e',\
-                        playaOrange: '#c2410c', // Elegant burnt orange\
-                        playaClay: '#78350f',\
-                        sandBg: '#FAF8F5',     // Soft editorial sand\
-                        luxuryCream: '#f4f1ea', // Cream card fill\
-                    \}\
-                \}\
-            \}\
-        \}\
-    </script>\
-</head>\
-<body class="bg-[#FAF8F5] text-stone-900 font-sans antialiased overflow-x-hidden selection:bg-breezyGreen selection:text-white">\
-\
-    <!-- Header / Nav (Clean, minimalist white with sharp bottom border) -->\
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 px-6 lg:px-12 py-4">\
-        <div class="max-w-7xl mx-auto flex items-center justify-between">\
-            <div class="flex items-center space-x-3">\
-                <div class="bg-breezyGreen p-2 rounded-lg">\
-                    <!-- Clean minimal golf & wave icon -->\
-                    <svg class="w-5 h-5 text-[#FAF8F5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">\
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3" />\
-                        <circle cx="12" cy="12" r="3" />\
-                    </svg>\
-                </div>\
-                <div>\
-                    <span class="font-black text-sm lg:text-base tracking-widest text-stone-900 uppercase block leading-none">Perez en la Playa</span>\
-                    <span class="text-[10px] text-playaOrange tracking-widest font-bold uppercase">The Breezy Playa Invitational</span>\
-                </div>\
-            </div>\
-            \
-            <nav class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase text-stone-600">\
-                <a href="#the-concept" class="hover:text-stone-900 transition duration-200">The Vibe</a>\
-                <a href="#itinerary" class="hover:text-stone-900 transition duration-200">The Schedule</a>\
-                <a href="#hosts" class="hover:text-stone-900 transition duration-200">The Lineup</a>\
-                <a href="#merch" class="hover:text-stone-900 transition duration-200">Exclusive Merch</a>\
-                <a href="#booking" class="hover:text-stone-900 transition duration-200">Lock in Your Room</a>\
-            </nav>\
-\
-            <div>\
-                <a href="#booking" class="bg-stone-900 hover:bg-breezyGreen text-white px-5 py-2.5 rounded-none text-xs font-bold tracking-widest uppercase transition duration-300">\
-                    Have A Day\
-                </a>\
-            </div>\
-        </div>\
-    </header>\
-\
-    <!-- Hero Section (Generous whitespace, elegant typography, high-end editorial) -->\
-    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 pb-32 overflow-hidden bg-white border-b border-stone-200">\
-        <!-- Minimal background architectural lines -->\
-        <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:24px_24px]"></div>\
-        \
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">\
-            <!-- Sleek Badge -->\
-            <div class="inline-flex items-center space-x-2 border border-stone-300 bg-[#FAF8F5] px-4 py-1.5 mb-8">\
-                <span class="flex h-2 w-2 relative">\
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-playaOrange opacity-75"></span>\
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-playaOrange"></span>\
-                </span>\
-                <span class="text-[10px] font-black tracking-widest uppercase text-stone-800">Limited-Release Room Block</span>\
-            </div>\
-\
-            <!-- Main Heading with Editorial Serif -->\
-            <h1 class="font-serif text-5xl md:text-8xl font-normal tracking-tight leading-none text-stone-950 mb-6">\
-                Perez en la <span class="italic text-playaOrange">Playa</span>\
-            </h1>\
-            \
-            <!-- Subtitle -->\
-            <p class="font-sans font-bold tracking-widest uppercase text-sm md:text-lg text-breezyLightGreen mb-10">\
-                The Breezy Playa Invitational &middot; Riviera Maya\
-            </p>\
-\
-            <!-- Refined copy in authentic BDS Voice -->\
-            <p class="max-w-3xl mx-auto text-stone-600 text-base md:text-xl mb-12 font-normal leading-relaxed">\
-                Fellas, lock in. We are pairing the legendary ball-striking, wedge-spinning energy of <strong class="text-stone-900 font-semibold">Fat Perez</strong> with four nights of absolute paradise under the stars with <strong class="text-stone-900 font-semibold">Widespread Panic</strong>. Unlimited dining, premium pours, coastal breeze, and a legendary 18-hole scramble in the Mexican sun. <span class="italic font-serif text-playaOrange">Have an absolute day!</span>\
-            </p>\
-\
-            <!-- Minimalist Editorial CTAs -->\
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">\
-                <a href="#booking" class="w-full sm:w-auto bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">\
-                    Reserve Your Space\
-                </a>\
-                <a href="#itinerary" class="w-full sm:w-auto border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">\
-                    The Gameplan\
-                </a>\
-            </div>\
-\
-            <!-- Features Banner (Crisp borders, clean boxes) -->\
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24 pt-10 border-t border-stone-200">\
-                <div class="text-center px-4">\
-                    <div class="text-2xl font-serif font-bold text-stone-950">18-HOLE</div>\
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Playa Scramble</div>\
-                </div>\
-                <div class="text-center px-4 border-l border-stone-200">\
-                    <div class="text-2xl font-serif font-bold text-stone-950">4 NIGHTS</div>\
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Widespread Panic</div>\
-                </div>\
-                <div class="text-center px-4 border-l border-stone-200">\
-                    <div class="text-2xl font-serif font-bold text-stone-950">100%</div>\
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">All-Inclusive Luxury</div>\
-                </div>\
-                <div class="text-center px-4 border-l border-stone-200">\
-                    <div class="text-2xl font-serif font-bold text-stone-950">EXCLUSIVE</div>\
-                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Limited Room Block</div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- The Vibe Section (Prisitne light boxes, beautiful alignment) -->\
-    <section id="the-concept" class="bg-[#FAF8F5] py-28 relative overflow-hidden">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">\
-            <div class="text-center max-w-3xl mx-auto mb-20">\
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">The Perfect Union</span>\
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 leading-tight mb-6">Golf-Sickos Meet Jam-Band Legends</h2>\
-                <p class="text-stone-600 text-sm md:text-base leading-relaxed">\
-                    This isn't your average country club setup. This is a high-octane beach takeover at Hard Rock Riviera Maya, designed exclusively for the Breezy crew and Spreadheads. Maximum leisure, zero logistics, elite hospitality.\
-                </p>\
-            </div>\
-\
-            <!-- Two Column Layout -->\
-            <div class="grid lg:grid-cols-2 gap-16 items-center">\
-                <!-- Visual Feature Stack -->\
-                <div class="space-y-8">\
-                    <!-- Cards are styled with flat white backgrounds, thin slate-200 borders, and black opacity icons -->\
-                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">\
-                        <div class="flex items-center space-x-4 mb-4">\
-                            <div class="p-3 bg-stone-100 text-stone-800">\
-                                <i class="fa-solid fa-golf-ball-tee text-xl opacity-75"></i>\
-                            </div>\
-                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Day: The Breezy Invitationals</h3>\
-                        </div>\
-                        <p class="text-stone-600 text-sm leading-relaxed mb-6">\
-                            Tee it up with Fat Perez on pristine, ocean-side championship holes. Expect legendary custom wedge clinics (watch him throw darts in real-time), putting face-offs, and a premier 18-hole scramble. Exceptional chirping, cold drinks, and high-quality golf.\
-                        </p>\
-                        <div class="flex flex-wrap gap-2">\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">18-Hole Hard Rock Golf</span>\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Wedge Clinic with FP</span>\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Tequila & Cigar Stations</span>\
-                        </div>\
-                    </div>\
-\
-                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">\
-                        <div class="flex items-center space-x-4 mb-4">\
-                            <div class="p-3 bg-stone-100 text-stone-800">\
-                                <i class="fa-solid fa-guitar text-xl opacity-75"></i>\
-                            </div>\
-                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Night: Panic en la Playa</h3>\
-                        </div>\
-                        <p class="text-stone-600 text-sm leading-relaxed mb-6">\
-                            Step off the course and head straight to the concert courtyard. Watch Widespread Panic perform four spectacular full shows right on the ocean\'92s edge. No transit, no lines, no hassle. Pure musical magic combined with impeccable all-inclusive service.\
-                        </p>\
-                        <div class="flex flex-wrap gap-2">\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">4 Nights of Widespread Panic</span>\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Beachfront Stage Access</span>\
-                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Late Night Jams</span>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-                <!-- Text Value & Elegant Quote Block -->\
-                <div class="space-y-10 lg:pl-6">\
-                    <h3 class="font-serif text-3xl md:text-4xl font-normal text-stone-950 leading-tight">"This is absolute premium hospitality. It's a clinic."</h3>\
-                    <p class="text-stone-600 text-sm md:text-base leading-relaxed">\
-                        When you book your package inside the exclusive Breezy room block, you are reserving far more than a luxury hotel room and concert ticket. You are unlocking a seamless, fully optimized tropical vacation with unlimited dining, top-tier drinks, premium golf, and legendary entertainment.\
-                    </p>\
-                    \
-                    <div class="border-l-2 border-stone-800 pl-6 space-y-3">\
-                        <p class="italic text-stone-800 font-serif text-lg leading-relaxed">\
-                            "I've played some pretty epic setups, but hitting a crisp wedge over a lagoon, sipping a cold drink, and knowing I have Widespread Panic waiting on the beach in three hours? Fellas, that is how you have a day."\
-                        </p>\
-                        <p class="text-[10px] font-bold tracking-widest uppercase text-stone-500">\'97 Fat Perez, Host & Commissioner</p>\
-                    </div>\
-\
-                    <div class="bg-[#FAF8F5] p-6 border border-stone-200">\
-                        <h4 class="font-bold text-stone-900 text-sm mb-2 flex items-center gap-2">\
-                            <i class="fa-solid fa-champagne-glasses text-stone-800 opacity-75"></i>\
-                            Uncompromised All-Inclusive Luxury\
-                        </h4>\
-                        <p class="text-stone-500 text-xs leading-relaxed">\
-                            Included in every single reservation: Premium dining, endless gourmet drinks, luxury private airport transfers, complete stage admission, and entry to the exclusive Breezy Playa Invitational tournament. No surprise charges at checkout. None.\
-                        </p>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- The Hosts (Sophisticated minimal bios with sharp typography) -->\
-    <section id="hosts" class="bg-white py-28 border-t border-b border-stone-200">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">\
-            <div class="text-center max-w-3xl mx-auto mb-20">\
-                <span class="text-xs font-bold text-breezyLightGreen tracking-widest uppercase block mb-3">The Captains of Leisure</span>\
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Meet Your Hosts</h2>\
-                <p class="text-stone-600">\
-                    We've matched the greatest golf swing on YouTube with the heartbeat of Widespread Panic to curate your tropical escape.\
-                </p>\
-            </div>\
-\
-            <!-- Host Cards (Flat, high contrast, clean white) -->\
-            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">\
-                <!-- Host 1 -->\
-                <div class="bg-[#FAF8F5] border border-stone-200 p-8 lg:p-12 flex flex-col justify-between">\
-                    <div>\
-                        <div class="flex items-center justify-between mb-8">\
-                            <span class="border border-stone-300 text-stone-800 text-[10px] font-bold uppercase tracking-widest px-3 py-1">Bob Does Sports</span>\
-                            <i class="fa-solid fa-golf-ball-tee text-xl text-stone-700 opacity-75"></i>\
-                        </div>\
-                        <h3 class="font-serif text-3xl font-normal text-stone-950 mb-2">Fat Perez</h3>\
-                        <p class="text-playaOrange text-[10px] font-bold tracking-widest uppercase mb-6">Master of the Euro Step & Flush Wedge</p>\
-                        <p class="text-stone-600 text-sm leading-relaxed mb-8">\
-                            Known worldwide for showing up in a clean visor, pin-seeking darts, and smoking premium cigars while carrying the Bob Does Sports crew. FP is ready to host clinics on the range and enjoy cold beverages with you at the clubhouse grill.\
-                        </p>\
-                    </div>\
-                    <div class="pt-6 border-t border-stone-200">\
-                        <span class="text-[10px] text-stone-400 font-bold tracking-widest uppercase block mb-1">Signature Phrase</span>\
-                        <span class="text-sm text-stone-900 font-serif italic">"Fellas, we are hitting an absolute clinic today!"</span>\
-                    </div>\
-                </div>\
-\
-                <!-- Host 2 -->\
-                <div class="bg-[#FAF8F5] border border-stone-200 p-8 lg:p-12 flex flex-col justify-between">\
-                    <div>\
-                        <div class="flex items-center justify-between mb-8">\
-                            <span class="border border-stone-300 text-stone-800 text-[10px] font-bold uppercase tracking-widest px-3 py-1">Widespread Panic</span>\
-                            <i class="fa-solid fa-guitar text-xl text-stone-700 opacity-75"></i>\
-                        </div>\
-                        <h3 class="font-serif text-3xl font-normal text-stone-950 mb-2">Sonny Ortiz</h3>\
-                        <p class="text-playaOrange text-[10px] font-bold tracking-widest uppercase mb-6">Percussion Maestro & Single Digit Handicap</p>\
-                        <p class="text-stone-600 text-sm leading-relaxed mb-8">\
-                            Sonny holds down the deep percussion rhythms for Widespread Panic and has been the honorary captain of golf events at Playa since day one. He is combining his love of tight tempos with elite resort golf to guarantee the Breezy block receives a premier setup.\
-                        </p>\
-                    </div>\
-                    <div class="pt-6 border-t border-stone-200">\
-                        <span class="text-[10px] text-stone-400 font-bold tracking-widest uppercase block mb-1">Signature Phrase</span>\
-                        <span class="text-sm text-stone-900 font-serif italic">"Let the music play, and let the putts roll!"</span>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- The Itinerary (Clean timeline, flat buttons, sharp design) -->\
-    <section id="itinerary" class="bg-[#FAF8F5] py-28 relative">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">\
-            <div class="text-center max-w-3xl mx-auto mb-16">\
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Chronology of Leisure</span>\
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">The Gameplan</h2>\
-                <p class="text-stone-600">\
-                    Click through the four days of paradise to see how we blend premium morning golf with legendary evening beachfront performances.\
-                </p>\
-            </div>\
-\
-            <!-- Tab Container -->\
-            <div class="max-w-4xl mx-auto">\
-                <div class="flex flex-wrap justify-between border-b border-stone-300 mb-10 bg-white p-2">\
-                    <button onclick="switchTab(1)" id="tab-btn-1" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 bg-stone-900 text-white">\
-                        Day 1: Arrival\
-                    </button>\
-                    <button onclick="switchTab(2)" id="tab-btn-2" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">\
-                        Day 2: Scramble\
-                    </button>\
-                    <button onclick="switchTab(3)" id="tab-btn-3" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">\
-                        Day 3: Clinic\
-                    </button>\
-                    <button onclick="switchTab(4)" id="tab-btn-4" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">\
-                        Day 4: Finale\
-                    </button>\
-                </div>\
-\
-                <!-- Day Content Cards -->\
-                <!-- Day 1 -->\
-                <div id="tab-content-1" class="bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">\
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">\
-                        <div>\
-                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Thursday Kickoff</span>\
-                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">Tacos, Tequila, and Tunes</h3>\
-                        </div>\
-                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 1</span>\
-                    </div>\
-\
-                    <div class="grid md:grid-cols-2 gap-10">\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">\uc0\u55356 \u57093  Daytime Warmup</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-plane"></i></span>\
-                                    <span><strong>12:00 PM:</strong> Premium airport transfers take you straight to Hard Rock. Elite, priority check-in for Breezy room block guests.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-champagne-glasses"></i></span>\
-                                    <span><strong>4:00 PM:</strong> Welcome Happy Hour at the Lagoon swim-up bar hosted by Fat Perez. Grab your co-branded golf bundle.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">\uc0\u55356 \u57272  Nighttime Jam</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-fire"></i></span>\
-                                    <span><strong>7:30 PM:</strong> Beachfront buffet dinner under the tropical sky. All-inclusive premium bars are fully unlocked.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>\
-                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 1)</strong> on the beach stage. Your paradise run begins.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-                <!-- Day 2 -->\
-                <div id="tab-content-2" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">\
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">\
-                        <div>\
-                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Friday Showdown</span>\
-                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">The Breezy Playa Invitational</h3>\
-                        </div>\
-                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 2</span>\
-                    </div>\
-\
-                    <div class="grid md:grid-cols-2 gap-10">\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">\uc0\u55356 \u57286  The Scramble Tournament</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-golf-ball-tee"></i></span>\
-                                    <span><strong>8:00 AM:</strong> Shotgun start at Hard Rock Golf Club. 18-hole team scramble. Cold drinks, high-quality carts, and custom contest holes.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-award"></i></span>\
-                                    <span><strong>1:30 PM:</strong> Post-round lunch and custom cigar lounge with Fat Perez & Sonny Ortiz. Awarding the Breezy Playa Cup.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">\uc0\u55356 \u57272  Nighttime Jam</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-glass-water"></i></span>\
-                                    <span><strong>6:00 PM:</strong> Tequila tasting lounge in the concert arena courtyard. Find your rhythm.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>\
-                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 2)</strong>. Back to the beach for another legendary performance.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-                <!-- Day 3 -->\
-                <div id="tab-content-3" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">\
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">\
-                        <div>\
-                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Saturday Leisure</span>\
-                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">Wedge Clinics & Beach Parties</h3>\
-                        </div>\
-                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 3</span>\
-                    </div>\
-\
-                    <div class="grid md:grid-cols-2 gap-10">\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">\uc0\u55356 \u57292 \u65039  FP's Masterclass</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-bullseye"></i></span>\
-                                    <span><strong>10:30 AM:</strong> "Wedges & Micheladas" on the driving range. Watch FP detail his wedge setup and the famous Euro Step.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-umbrella-beach"></i></span>\
-                                    <span><strong>1:00 PM:</strong> Swim-up pool bar session, all-inclusive luxury tacos, and oceanfront recovery.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">\uc0\u55356 \u57272  Nighttime Jam</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-moon"></i></span>\
-                                    <span><strong>8:00 PM:</strong> Sunset seaside cookout. Gather the crew for fresh local fare and top-shelf pours.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>\
-                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 3)</strong>. The band is locked in and taking it to another level.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-                <!-- Day 4 -->\
-                <div id="tab-content-4" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">\
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">\
-                        <div>\
-                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Sunday Finale</span>\
-                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">The Grand Outro</h3>\
-                        </div>\
-                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 4</span>\
-                    </div>\
-\
-                    <div class="grid md:grid-cols-2 gap-10">\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">\uc0\u9971  Leisure Golf & Pool Hangout</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-flag"></i></span>\
-                                    <span><strong>9:00 AM:</strong> Optional leisurely 9 holes with your group, or unwind at the luxury wellness center.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-cloud-sun"></i></span>\
-                                    <span><strong>2:00 PM:</strong> Paddleboarding in the calm coastal lagoon and sunset margaritas with the Breezy crew.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                        <div>\
-                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">\uc0\u55356 \u57272  Nighttime Jam</h4>\
-                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-crown"></i></span>\
-                                    <span><strong>6:00 PM:</strong> Breezy Block Farewell Dinner with a champagne toast celebrating a historic run.</span>\
-                                </li>\
-                                <li class="flex items-start gap-3">\
-                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>\
-                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Final Set 4)</strong>. Sending it off with the ultimate encore.</span>\
-                                </li>\
-                            </ul>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- Exclusive Merch Section (Editorial Boutique layout with interactive customizer) -->\
-    <section id="merch" class="bg-white py-28 relative border-b border-stone-200">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">\
-            <div class="text-center max-w-3xl mx-auto mb-20">\
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Limited Run Included</span>\
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Exclusive Co-Branded Gear</h2>\
-                <p class="text-stone-600">\
-                    Book the Breezy Block and receive this custom, limited edition *Breezy x Playa* golf kit. Use our generator below to preview the colorway you want loaded into your welcome pack!\
-                </p>\
-            </div>\
-\
-            <!-- Merch Selector Component (Elegant clean white container, flat shadow) -->\
-            <div class="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto bg-[#FAF8F5] border border-stone-200 p-8 lg:p-16 shadow-sm">\
-                <!-- Visual Interactive Canvas -->\
-                <div class="flex flex-col items-center justify-center space-y-6">\
-                    <div class="relative w-full aspect-square max-w-[340px] bg-white rounded-none flex items-center justify-center p-6 border border-stone-200">\
-                        <span class="absolute top-4 left-4 text-[9px] font-bold tracking-widest bg-stone-900 text-white px-2.5 py-1 uppercase">Visualizer</span>\
-                        \
-                        <!-- Interactive Polo SVG -->\
-                        <svg id="polo-svg" class="w-full h-auto max-h-[250px] drop-shadow-sm transition-all duration-500 ease-in-out" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\
-                            <!-- Background shirt body -->\
-                            <path id="polo-body" d="M15,25 L25,18 L35,22 L65,22 L75,18 L85,25 L80,45 L72,43 L72,85 L28,85 L28,43 L20,45 Z" fill="#2a5c4a" class="transition-all duration-500" />\
-                            <!-- Collar Left -->\
-                            <path id="polo-collar-left" d="M35,22 L50,30 L50,22 L35,17 Z" fill="#1b4d3e" class="transition-all duration-500" />\
-                            <!-- Collar Right -->\
-                            <path id="polo-collar-right" d="M65,22 L50,30 L50,22 L65,17 Z" fill="#1b4d3e" class="transition-all duration-500" />\
-                            <!-- Sleeve Trim Left -->\
-                            <path id="polo-sleeve-trim-l" d="M15,25 L20,45 L17,45 L13,25 Z" fill="#ffffff" />\
-                            <!-- Sleeve Trim Right -->\
-                            <path id="polo-sleeve-trim-r" d="M85,25 L80,45 L83,45 L87,25 Z" fill="#ffffff" />\
-                            <!-- Placket (button stripe) -->\
-                            <rect x="47.5" y="22" width="5" height="15" fill="#1b4d3e" id="polo-placket" class="transition-all duration-500" />\
-                            <!-- Buttons -->\
-                            <circle cx="50" cy="26" r="1" fill="#ffffff" />\
-                            <circle cx="50" cy="32" r="1" fill="#ffffff" />\
-                            <!-- Custom Logo Embroidery -->\
-                            <!-- Sun outline + Palm tree simplified -->\
-                            <circle cx="62" cy="35" r="3" fill="#FAF8F5" />\
-                            <path d="M62,35 L62,40" stroke="#ffffff" stroke-width="0.8" />\
-                            <path d="M62,37 Q64,36 66,37" stroke="#ffffff" stroke-width="0.8" />\
-                            <path d="M62,37 Q60,36 58,37" stroke="#ffffff" stroke-width="0.8" />\
-                        </svg>\
-                    </div>\
-\
-                    <!-- Selected Label display -->\
-                    <div class="text-center">\
-                        <span class="text-[10px] text-stone-400 font-bold uppercase block mb-1">Active Colorway:</span>\
-                        <span id="active-color-name" class="text-base font-bold text-stone-900 tracking-wide">Breezy Pine Green</span>\
-                    </div>\
-                </div>\
-\
-                <!-- Interface Options -->\
-                <div class="space-y-8">\
-                    <div>\
-                        <span class="text-[10px] font-bold text-playaOrange tracking-widest uppercase block mb-2">Configure Your Kit</span>\
-                        <h3 class="font-serif text-3xl font-normal text-stone-950">The Breezy Playa Performance Polo</h3>\
-                        <p class="text-stone-600 text-sm mt-3 leading-relaxed">\
-                            Engineered for high-temperature play, premium moisture-wicking properties, and 4-way stretch. Features custom woven *Playa Sunset* branding on the neck tape and an embroidered dual logo.\
-                        </p>\
-                    </div>\
-\
-                    <!-- Color Selector Buttons -->\
-                    <div class="space-y-4">\
-                        <label class="block text-[10px] font-bold tracking-widest uppercase text-stone-400">Select Fabric Color:</label>\
-                        <div class="flex flex-col gap-3">\
-                            <button onclick="setMerchColor('green', 'Breezy Pine Green', '#2a5c4a', '#1b4d3e')" class="flex items-center justify-between p-3.5 bg-white border border-stone-400 text-left text-xs font-bold uppercase tracking-wider text-stone-900 transition duration-200" id="btn-color-green">\
-                                <div class="flex items-center space-x-3">\
-                                    <span class="w-4 h-4 rounded-none bg-[#2a5c4a] inline-block border border-stone-200"></span>\
-                                    <span>Breezy Pine Green</span>\
-                                </div>\
-                                <span class="text-[9px] font-bold text-stone-400 uppercase">Selected</span>\
-                            </button>\
-\
-                            <button onclick="setMerchColor('coral', 'Playa Sunset Coral', '#c2410c', '#7c2d12')" class="flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900" id="btn-color-coral">\
-                                <div class="flex items-center space-x-3">\
-                                    <span class="w-4 h-4 rounded-none bg-[#c2410c] inline-block border border-stone-200"></span>\
-                                    <span>Playa Sunset Coral</span>\
-                                </div>\
-                                <span class="text-[9px] font-bold text-stone-400 uppercase">Change Color</span>\
-                            </button>\
-\
-                            <button onclick="setMerchColor('teal', 'Deep Caribbean Teal', '#0f766e', '#115e59')" class="flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900" id="btn-color-teal">\
-                                <div class="flex items-center space-x-3">\
-                                    <span class="w-4 h-4 rounded-none bg-[#0f766e] inline-block border border-stone-200"></span>\
-                                    <span>Deep Caribbean Teal</span>\
-                                </div>\
-                                <span class="text-[9px] font-bold text-stone-400 uppercase">Change Color</span>\
-                            </button>\
-                        </div>\
-                    </div>\
-\
-                    <!-- Extra Inclusion Perks Info -->\
-                    <div class="bg-white p-5 border border-stone-200 flex items-center gap-4">\
-                        <div class="text-stone-700 opacity-75 text-xl">\
-                            <i class="fa-solid fa-gift"></i>\
-                        </div>\
-                        <div>\
-                            <span class="text-xs text-stone-800 font-bold block">Also included in the box:</span>\
-                            <span class="text-xs text-stone-500 leading-normal">Co-branded Microfiber Golf Towel, 3 custom Breezy Playa Golf Balls, & Premium Cigar Cutter.</span>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- Interactive Configurator (Clean pricing and sleek inputs) -->\
-    <section id="booking" class="bg-[#FAF8F5] py-28 relative">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">\
-            <div class="text-center max-w-3xl mx-auto mb-20">\
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Live Dynamic Pricing</span>\
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Build Your Breezy Block Package</h2>\
-                <p class="text-stone-600">\
-                    Adjust the selections below to choose your desired room tier, set guest numbers, and estimate your custom price.\
-                </p>\
-            </div>\
-\
-            <div class="grid lg:grid-cols-12 gap-16 max-w-6xl mx-auto">\
-                <!-- Left Column: Configurator Form -->\
-                <div class="lg:col-span-7 bg-white border border-stone-200 p-8 md:p-12 space-y-10 shadow-sm">\
-                    <h3 class="font-serif text-2xl font-normal text-stone-950 border-b border-stone-200 pb-4">1. Choose Accommodations</h3>\
-                    \
-                    <!-- Room Options List -->\
-                    <div class="space-y-4">\
-                        <!-- Option 1 -->\
-                        <div onclick="selectRoom('deluxe', 2299)" id="card-room-deluxe" class="cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200">\
-                            <div class="space-y-1">\
-                                <div class="flex items-center gap-3">\
-                                    <span class="text-lg font-bold text-stone-950">Deluxe Tropical Room</span>\
-                                    <span id="badge-room-deluxe" class="bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>\
-                                </div>\
-                                <p class="text-xs text-stone-500">Standard King/Double beds overlooking lush, tropical resort gardens.</p>\
-                            </div>\
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">\
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>\
-                                <span class="text-lg font-black text-stone-950">$2,299 <span class="text-xs text-stone-400 font-normal">/person</span></span>\
-                            </div>\
-                        </div>\
-\
-                        <!-- Option 2 -->\
-                        <div onclick="selectRoom('lagoon', 2699)" id="card-room-lagoon" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">\
-                            <div class="space-y-1">\
-                                <div class="flex items-center gap-3">\
-                                    <span class="text-lg font-bold text-stone-950">Lagoon-Side Walkout</span>\
-                                    <span id="badge-room-lagoon" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>\
-                                </div>\
-                                <p class="text-xs text-stone-500">Direct private terrace access leading right toward the pristine lagoon waters.</p>\
-                            </div>\
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">\
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>\
-                                <span class="text-lg font-black text-stone-950">$2,699 <span class="text-xs text-stone-400 font-normal">/person</span></span>\
-                            </div>\
-                        </div>\
-\
-                        <!-- Option 3 -->\
-                        <div onclick="selectRoom('suite', 3499)" id="card-room-suite" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">\
-                            <div class="space-y-1">\
-                                <div class="flex items-center gap-3">\
-                                    <span class="text-lg font-bold text-stone-950">The Euro-Step Presidential</span>\
-                                    <span id="badge-room-suite" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>\
-                                    <span class="bg-playaOrange text-white text-[9px] font-bold uppercase px-2 py-0.5">VIP Space</span>\
-                                </div>\
-                                <p class="text-xs text-stone-500">Massive luxury living spaces, private oceanfront hot tub, FP's personal favorite.</p>\
-                            </div>\
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">\
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>\
-                                <span class="text-lg font-black text-stone-950">$3,499 <span class="text-xs text-stone-400 font-normal">/person</span></span>\
-                            </div>\
-                        </div>\
-                    </div>\
-\
-                    <!-- Occupancy Selector -->\
-                    <div class="pt-8 border-t border-stone-200">\
-                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">2. Select Occupancy</h3>\
-                        <div class="grid grid-cols-2 gap-4">\
-                            <button onclick="selectOccupancy(1)" id="btn-occupancy-1" class="border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900">\
-                                <i class="fa-solid fa-user mb-2 block text-base opacity-75"></i>\
-                                Single Occupancy (1 Guest)\
-                            </button>\
-                            <button onclick="selectOccupancy(2)" id="btn-occupancy-2" class="border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900">\
-                                <i class="fa-solid fa-user-group mb-2 block text-base opacity-75"></i>\
-                                Double Occupancy (2 Guests)\
-                            </button>\
-                        </div>\
-                    </div>\
-\
-                    <!-- Upgrades / Add-ons -->\
-                    <div class="pt-8 border-t border-stone-200">\
-                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">3. Premium Upgrades</h3>\
-                        <div class="space-y-3">\
-                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">\
-                                <div class="flex items-center space-x-3">\
-                                    <input type="checkbox" id="add-on-clubs" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">\
-                                    <div>\
-                                        <span class="text-sm font-bold block text-stone-900">Premium Club Rental Buy-in</span>\
-                                        <span class="text-xs text-stone-500">Reserve a brand new set of Callaway clubs for the scramble.</span>\
-                                    </div>\
-                                </div>\
-                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$150</span>\
-                            </label>\
-\
-                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">\
-                                <div class="flex items-center space-x-3">\
-                                    <input type="checkbox" id="add-on-cigar" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">\
-                                    <div>\
-                                        <span class="text-sm font-bold block text-stone-900">FP's Late Night Tequila & Cigar Experience</span>\
-                                        <span class="text-xs text-stone-500">Private tasting lounge with premium single-batch mezcals and vintage cigars.</span>\
-                                    </div>\
-                                </div>\
-                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$199</span>\
-                            </label>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-                <!-- Right Column: Summary & Contact -->\
-                <div class="lg:col-span-5 flex flex-col justify-between space-y-12">\
-                    <div class="bg-white border border-stone-200 p-8 space-y-8 shadow-sm">\
-                        <h3 class="text-xs font-bold tracking-widest uppercase text-playaOrange">Your Booking Invoice</h3>\
-                        \
-                        <!-- Details Breakdown -->\
-                        <div class="space-y-4 border-b border-stone-200 pb-6 text-xs md:text-sm">\
-                            <div class="flex justify-between">\
-                                <span class="text-stone-500">Accommodations:</span>\
-                                <span id="summary-room-name" class="font-bold text-stone-900">Deluxe Tropical Room</span>\
-                            </div>\
-                            <div class="flex justify-between">\
-                                <span class="text-stone-500">Occupancy:</span>\
-                                <span id="summary-guests" class="font-bold text-stone-900">2 Guests (Double)</span>\
-                            </div>\
-                            <div id="summary-club-row" class="hidden flex justify-between text-breezyLightGreen">\
-                                <span>Add-on: Premium Club Rental</span>\
-                                <span class="font-bold">+$150</span>\
-                            </div>\
-                            <div id="summary-cigar-row" class="hidden flex justify-between text-breezyLightGreen">\
-                                <span>Add-on: Cigar/Tequila Lounge</span>\
-                                <span class="font-bold">+$199</span>\
-                            </div>\
-                            <div class="flex justify-between text-xs text-stone-500 bg-[#FAF8F5] p-4 border border-stone-200">\
-                                <span class="leading-normal">Includes: Unlimited meals, open bar, 4 nights concert tickets, golf entry, welcome merch bundle.</span>\
-                            </div>\
-                        </div>\
-\
-                        <!-- Price Tag -->\
-                        <div class="text-center py-6 bg-[#FAF8F5] border border-stone-200">\
-                            <span class="text-[10px] text-stone-400 uppercase font-bold tracking-widest block mb-1">Estimated Total Package Cost</span>\
-                            <span id="final-price-tag" class="text-4xl md:text-5xl font-black text-stone-950 font-serif">$4,598</span>\
-                            <span class="text-[10px] text-stone-400 block mt-2">Pricing calculated for the whole party.</span>\
-                        </div>\
-\
-                        <!-- Urgency Banner -->\
-                        <div class="bg-stone-100 border border-stone-300 p-3.5 text-center">\
-                            <p class="text-[10px] text-stone-700 font-bold uppercase tracking-wider">\
-                                <i class="fa-solid fa-triangle-exclamation mr-1.5 opacity-75"></i> Exclusive Room Block Active\
-                            </p>\
-                        </div>\
-                    </div>\
-\
-                    <!-- Lead Capture Form -->\
-                    <div class="bg-white border border-stone-200 p-8 space-y-6 shadow-sm">\
-                        <h4 class="font-serif text-xl font-normal text-stone-950">Secure Your Space</h4>\
-                        <p class="text-stone-500 text-xs leading-relaxed">\
-                            Submit your contact details and golf handicap. Our Golf Commissioner will review your submission and connect with you to process the deposit.\
-                        </p>\
-                        \
-                        <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">\
-                            <div class="grid grid-cols-2 gap-3">\
-                                <input type="text" placeholder="First Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">\
-                                <input type="text" placeholder="Last Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">\
-                            </div>\
-                            <input type="email" placeholder="Email Address" required class="w-full bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">\
-                            <div class="grid grid-cols-2 gap-3">\
-                                <input type="number" placeholder="Golf Handicap" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">\
-                                <select class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-500 focus:border-stone-900 focus:outline-none">\
-                                    <option value="" disabled selected>Polo Size</option>\
-                                    <option value="S">Small</option>\
-                                    <option value="M">Medium</option>\
-                                    <option value="L">Large</option>\
-                                    <option value="XL">Extra Large</option>\
-                                    <option value="XXL">XXL</option>\
-                                </select>\
-                            </div>\
-                            \
-                            <button type="submit" class="w-full bg-stone-900 hover:bg-breezyGreen py-4 text-xs font-bold tracking-widest uppercase text-white transition duration-300">\
-                                Submit Spot Request\
-                            </button>\
-                        </form>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- Success Modal (Premium, clean white) -->\
-    <div id="success-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-950/40 backdrop-blur-sm flex items-center justify-center p-4">\
-        <div class="bg-white border border-stone-200 p-8 max-w-md w-full text-center space-y-6 shadow-xl transform scale-95 transition-all duration-300">\
-            <div class="mx-auto w-16 h-16 bg-stone-100 text-stone-800 rounded-none flex items-center justify-center text-3xl">\
-                <i class="fa-solid fa-square-check"></i>\
-            </div>\
-            \
-            <div class="space-y-3">\
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase">Request Submitted</span>\
-                <h3 class="font-serif text-2xl font-normal text-stone-950">Fellas, You Are Pencil'd In!</h3>\
-                <p id="modal-success-msg" class="text-stone-600 text-xs md:text-sm leading-relaxed">\
-                    We have temporarily reserved a Deluxe Tropical Room on the Breezy Block. Our commissioner will follow up within 24 hours to confirm.\
-                </p>\
-            </div>\
-\
-            <div class="bg-[#FAF8F5] p-4 border border-stone-200">\
-                <p class="text-[11px] text-stone-500 leading-normal">Remember: Get the golf clubs polished and pack your dancing shoes. It's going to be a historic run.</p>\
-            </div>\
-\
-            <button onclick="closeModal()" class="w-full bg-stone-900 hover:bg-stone-800 text-white py-3.5 text-xs font-bold uppercase tracking-widest transition duration-200">\
-                Return to Page\
-            </button>\
-        </div>\
-    </div>\
-\
-    <!-- Footer -->\
-    <footer class="bg-stone-950 py-16 text-stone-500 text-xs border-t border-stone-850">\
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">\
-            <div class="flex items-center space-x-3">\
-                <span class="font-black text-white uppercase tracking-widest text-sm">Perez en la Playa</span>\
-                <span class="border-l border-stone-800 pl-3">Collaboration Proposal Design</span>\
-            </div>\
-            <p class="text-center md:text-right">\
-                &copy; 2026 Playa Luna Presents & Breezy Golf. Music by Widespread Panic. Single-page proposal mockup.\
-            </p>\
-        </div>\
-    </footer>\
-\
-    <!-- Interactive JS Logic -->\
-    <script>\
-        // Itinerary tab switching\
-        function switchTab(dayNum) \{\
-            for (let i = 1; i <= 4; i++) \{\
-                document.getElementById(`tab-content-$\{i\}`).classList.add('hidden');\
-                \
-                let btn = document.getElementById(`tab-btn-$\{i\}`);\
-                btn.className = "flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900";\
-            \}\
-            \
-            document.getElementById(`tab-content-$\{dayNum\}`).classList.remove('hidden');\
-            \
-            let activeBtn = document.getElementById(`tab-btn-$\{dayNum\}`);\
-            activeBtn.className = "flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 bg-stone-900 text-white";\
-        \}\
-\
-        // Merch Customizer Logic\
-        // Changes colors of the vector polo elements\
-        function setMerchColor(key, name, baseColor, shadowColor) \{\
-            document.getElementById('active-color-name').innerText = name;\
-\
-            const poloBody = document.getElementById('polo-body');\
-            const poloCollarLeft = document.getElementById('polo-collar-left');\
-            const poloCollarRight = document.getElementById('polo-collar-right');\
-            const poloPlacket = document.getElementById('polo-placket');\
-\
-            poloBody.setAttribute('fill', baseColor);\
-            poloCollarLeft.setAttribute('fill', shadowColor);\
-            poloCollarRight.setAttribute('fill', shadowColor);\
-            poloPlacket.setAttribute('fill', shadowColor);\
-\
-            const buttons = ['green', 'coral', 'teal'];\
-            buttons.forEach(b => \{\
-                const btn = document.getElementById(`btn-color-$\{b\}`);\
-                if (b === key) \{\
-                    btn.className = `flex items-center justify-between p-3.5 bg-white border border-stone-450 text-left text-xs font-bold uppercase tracking-wider text-stone-900 transition duration-200`;\
-                \} else \{\
-                    btn.className = `flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900`;\
-                \}\
-            \});\
-        \}\
-\
-        // Configurator Pricing Calculations\
-        let selectedRoomType = 'deluxe';\
-        let baseRoomPrice = 2299;\
-        let guestsCount = 2;\
-        let addOnClubsChecked = false;\
-        let addOnCigarChecked = false;\
-\
-        const roomDetails = \{\
-            deluxe: \{ name: "Deluxe Tropical Room", price: 2299 \},\
-            lagoon: \{ name: "Lagoon-Side Walkout", price: 2699 \},\
-            suite: \{ name: "The Euro-Step Presidential", price: 3499 \}\
-        \};\
-\
-        function selectRoom(roomKey, price) \{\
-            selectedRoomType = roomKey;\
-            baseRoomPrice = price;\
-\
-            const keys = ['deluxe', 'lagoon', 'suite'];\
-            keys.forEach(k => \{\
-                const card = document.getElementById(`card-room-$\{k\}`);\
-                const badge = document.getElementById(`badge-room-$\{k\}`);\
-                if (k === roomKey) \{\
-                    card.className = "cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200";\
-                    badge.classList.remove('hidden');\
-                \} else \{\
-                    card.className = "cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400";\
-                    badge.classList.add('hidden');\
-                \}\
-            \});\
-\
-            updatePricing();\
-        \}\
-\
-        function selectOccupancy(count) \{\
-            guestsCount = count;\
-\
-            const btn1 = document.getElementById('btn-occupancy-1');\
-            const btn2 = document.getElementById('btn-occupancy-2');\
-\
-            if (count === 1) \{\
-                btn1.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";\
-                btn2.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";\
-            \} else \{\
-                btn1.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";\
-                btn2.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";\
-            \}\
-\
-            updatePricing();\
-        \}\
-\
-        function toggleAddOn() \{\
-            addOnClubsChecked = document.getElementById('add-on-clubs').checked;\
-            addOnCigarChecked = document.getElementById('add-on-cigar').checked;\
-\
-            updatePricing();\
-        \}\
-\
-        function updatePricing() \{\
-            const roomInfo = roomDetails[selectedRoomType];\
-            document.getElementById('summary-room-name').innerText = roomInfo.name;\
-            document.getElementById('summary-guests').innerText = `$\{guestsCount\} Guest$\{guestsCount > 1 ? 's' : ''\} ($\{guestsCount === 1 ? 'Single' : 'Double'\})`;\
-\
-            let totalPrice = (baseRoomPrice * guestsCount);\
-            \
-            if (addOnClubsChecked) \{\
-                totalPrice += (150 * guestsCount);\
-                document.getElementById('summary-club-row').classList.remove('hidden');\
-            \} else \{\
-                document.getElementById('summary-club-row').classList.add('hidden');\
-            \}\
-\
-            if (addOnCigarChecked) \{\
-                totalPrice += (199 * guestsCount);\
-                document.getElementById('summary-cigar-row').classList.remove('hidden');\
-            \} else \{\
-                document.getElementById('summary-cigar-row').classList.add('hidden');\
-            \}\
-\
-            document.getElementById('final-price-tag').innerText = `$$\{totalPrice.toLocaleString()\}`;\
-        \}\
-\
-        function handleFormSubmit(event) \{\
-            event.preventDefault();\
-            \
-            const roomName = roomDetails[selectedRoomType].name;\
-            const priceStr = document.getElementById('final-price-tag').innerText;\
-            \
-            document.getElementById('modal-success-msg').innerHTML = `We have temporarily reserved your <strong>$\{roomName\}</strong> for <strong>$\{guestsCount\} guest(s)</strong>. Your estimated total package is <strong>$\{priceStr\}</strong>. Our Breezy Golf Commissioner will reach out directly to coordinate schedules and finalize details. Let's have a day!`;\
-\
-            const modal = document.getElementById('success-modal');\
-            modal.classList.remove('hidden');\
-        \}\
-\
-        function closeModal() \{\
-            document.getElementById('success-modal').classList.add('hidden');\
-        \}\
-    </script>\
-</body>\
-</html>}
+    <!-- Header / Nav (Clean, minimalist white with sharp bottom border) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 px-6 lg:px-12 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-breezyGreen p-2 rounded-lg">
+                    <!-- Clean minimal golf & wave icon -->
+                    <svg class="w-5 h-5 text-[#FAF8F5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-black text-sm lg:text-base tracking-widest text-stone-900 uppercase block leading-none">Perez en la Playa</span>
+                    <span class="text-[10px] text-playaOrange tracking-widest font-bold uppercase">The Breezy Playa Invitational</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase text-stone-600">
+                <a href="#the-concept" class="hover:text-stone-900 transition duration-200">The Vibe</a>
+                <a href="#itinerary" class="hover:text-stone-900 transition duration-200">The Schedule</a>
+                <a href="#hosts" class="hover:text-stone-900 transition duration-200">The Lineup</a>
+                <a href="#merch" class="hover:text-stone-900 transition duration-200">Exclusive Merch</a>
+                <a href="#booking" class="hover:text-stone-900 transition duration-200">Lock in Your Room</a>
+            </nav>
+
+            <div>
+                <a href="#booking" class="bg-stone-900 hover:bg-breezyGreen text-white px-5 py-2.5 rounded-none text-xs font-bold tracking-widest uppercase transition duration-300">
+                    Have A Day
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Generous whitespace, elegant typography, high-end editorial) -->
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 pb-32 overflow-hidden bg-white border-b border-stone-200">
+        <!-- Minimal background architectural lines -->
+        <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <!-- Sleek Badge -->
+            <div class="inline-flex items-center space-x-2 border border-stone-300 bg-[#FAF8F5] px-4 py-1.5 mb-8">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-playaOrange opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-playaOrange"></span>
+                </span>
+                <span class="text-[10px] font-black tracking-widest uppercase text-stone-800">Limited-Release Room Block</span>
+            </div>
+
+            <!-- Main Heading with Editorial Serif -->
+            <h1 class="font-serif text-5xl md:text-8xl font-normal tracking-tight leading-none text-stone-950 mb-6">
+                Perez en la <span class="italic text-playaOrange">Playa</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="font-sans font-bold tracking-widest uppercase text-sm md:text-lg text-breezyLightGreen mb-10">
+                The Breezy Playa Invitational &middot; Riviera Maya
+            </p>
+
+            <!-- Refined copy in authentic BDS Voice -->
+            <p class="max-w-3xl mx-auto text-stone-600 text-base md:text-xl mb-12 font-normal leading-relaxed">
+                Fellas, lock in. We are pairing the legendary ball-striking, wedge-spinning energy of <strong class="text-stone-900 font-semibold">Fat Perez</strong> with four nights of absolute paradise under the stars with <strong class="text-stone-900 font-semibold">Widespread Panic</strong>. Unlimited dining, premium pours, coastal breeze, and a legendary 18-hole scramble in the Mexican sun. <span class="italic font-serif text-playaOrange">Have an absolute day!</span>
+            </p>
+
+            <!-- Minimalist Editorial CTAs -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#booking" class="w-full sm:w-auto bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                    Reserve Your Space
+                </a>
+                <a href="#itinerary" class="w-full sm:w-auto border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                    The Gameplan
+                </a>
+            </div>
+
+            <!-- Features Banner (Crisp borders, clean boxes) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24 pt-10 border-t border-stone-200">
+                <div class="text-center px-4">
+                    <div class="text-2xl font-serif font-bold text-stone-950">18-HOLE</div>
+                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Playa Scramble</div>
+                </div>
+                <div class="text-center px-4 border-l border-stone-200">
+                    <div class="text-2xl font-serif font-bold text-stone-950">4 NIGHTS</div>
+                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Widespread Panic</div>
+                </div>
+                <div class="text-center px-4 border-l border-stone-200">
+                    <div class="text-2xl font-serif font-bold text-stone-950">100%</div>
+                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">All-Inclusive Luxury</div>
+                </div>
+                <div class="text-center px-4 border-l border-stone-200">
+                    <div class="text-2xl font-serif font-bold text-stone-950">EXCLUSIVE</div>
+                    <div class="text-[10px] text-stone-500 font-bold uppercase tracking-widest mt-2">Limited Room Block</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Vibe Section (Prisitne light boxes, beautiful alignment) -->
+    <section id="the-concept" class="bg-[#FAF8F5] py-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">The Perfect Union</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 leading-tight mb-6">Golf-Sickos Meet Jam-Band Legends</h2>
+                <p class="text-stone-600 text-sm md:text-base leading-relaxed">
+                    This isn't your average country club setup. This is a high-octane beach takeover at Hard Rock Riviera Maya, designed exclusively for the Breezy crew and Spreadheads. Maximum leisure, zero logistics, elite hospitality.
+                </p>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Visual Feature Stack -->
+                <div class="space-y-8">
+                    <!-- Cards are styled with flat white backgrounds, thin slate-200 borders, and black opacity icons -->
+                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 bg-stone-100 text-stone-800">
+                                <i class="fa-solid fa-golf-ball-tee text-xl opacity-75"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Day: The Breezy Invitationals</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Tee it up with Fat Perez on pristine, ocean-side championship holes. Expect legendary custom wedge clinics (watch him throw darts in real-time), putting face-offs, and a premier 18-hole scramble. Exceptional chirping, cold drinks, and high-quality golf.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">18-Hole Hard Rock Golf</span>
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Wedge Clinic with FP</span>
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Tequila & Cigar Stations</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 border border-stone-200 shadow-sm relative transition hover:shadow-md">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 bg-stone-100 text-stone-800">
+                                <i class="fa-solid fa-guitar text-xl opacity-75"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-normal text-stone-950">By Night: Panic en la Playa</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Step off the course and head straight to the concert courtyard. Watch Widespread Panic perform four spectacular full shows right on the ocean’s edge. No transit, no lines, no hassle. Pure musical magic combined with impeccable all-inclusive service.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">4 Nights of Widespread Panic</span>
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Beachfront Stage Access</span>
+                            <span class="text-[10px] font-bold tracking-wider bg-stone-100 px-3 py-1.5 text-stone-700 uppercase">Late Night Jams</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Value & Elegant Quote Block -->
+                <div class="space-y-10 lg:pl-6">
+                    <h3 class="font-serif text-3xl md:text-4xl font-normal text-stone-950 leading-tight">"This is absolute premium hospitality. It's a clinic."</h3>
+                    <p class="text-stone-600 text-sm md:text-base leading-relaxed">
+                        When you book your package inside the exclusive Breezy room block, you are reserving far more than a luxury hotel room and concert ticket. You are unlocking a seamless, fully optimized tropical vacation with unlimited dining, top-tier drinks, premium golf, and legendary entertainment.
+                    </p>
+                    
+                    <div class="border-l-2 border-stone-800 pl-6 space-y-3">
+                        <p class="italic text-stone-800 font-serif text-lg leading-relaxed">
+                            "I've played some pretty epic setups, but hitting a crisp wedge over a lagoon, sipping a cold drink, and knowing I have Widespread Panic waiting on the beach in three hours? Fellas, that is how you have a day."
+                        </p>
+                        <p class="text-[10px] font-bold tracking-widest uppercase text-stone-500">— Fat Perez, Host & Commissioner</p>
+                    </div>
+
+                    <div class="bg-[#FAF8F5] p-6 border border-stone-200">
+                        <h4 class="font-bold text-stone-900 text-sm mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-champagne-glasses text-stone-800 opacity-75"></i>
+                            Uncompromised All-Inclusive Luxury
+                        </h4>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Included in every single reservation: Premium dining, endless gourmet drinks, luxury private airport transfers, complete stage admission, and entry to the exclusive Breezy Playa Invitational tournament. No surprise charges at checkout. None.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Hosts (Sophisticated minimal bios with sharp typography) -->
+    <section id="hosts" class="bg-white py-28 border-t border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-bold text-breezyLightGreen tracking-widest uppercase block mb-3">The Captains of Leisure</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Meet Your Hosts</h2>
+                <p class="text-stone-600">
+                    We've matched the greatest golf swing on YouTube with the heartbeat of Widespread Panic to curate your tropical escape.
+                </p>
+            </div>
+
+            <!-- Host Cards (Flat, high contrast, clean white) -->
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Host 1 -->
+                <div class="bg-[#FAF8F5] border border-stone-200 p-8 lg:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-8">
+                            <span class="border border-stone-300 text-stone-800 text-[10px] font-bold uppercase tracking-widest px-3 py-1">Bob Does Sports</span>
+                            <i class="fa-solid fa-golf-ball-tee text-xl text-stone-700 opacity-75"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl font-normal text-stone-950 mb-2">Fat Perez</h3>
+                        <p class="text-playaOrange text-[10px] font-bold tracking-widest uppercase mb-6">Master of the Euro Step & Flush Wedge</p>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-8">
+                            Known worldwide for showing up in a clean visor, pin-seeking darts, and smoking premium cigars while carrying the Bob Does Sports crew. FP is ready to host clinics on the range and enjoy cold beverages with you at the clubhouse grill.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-stone-200">
+                        <span class="text-[10px] text-stone-400 font-bold tracking-widest uppercase block mb-1">Signature Phrase</span>
+                        <span class="text-sm text-stone-900 font-serif italic">"Fellas, we are hitting an absolute clinic today!"</span>
+                    </div>
+                </div>
+
+                <!-- Host 2 -->
+                <div class="bg-[#FAF8F5] border border-stone-200 p-8 lg:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-8">
+                            <span class="border border-stone-300 text-stone-800 text-[10px] font-bold uppercase tracking-widest px-3 py-1">Widespread Panic</span>
+                            <i class="fa-solid fa-guitar text-xl text-stone-700 opacity-75"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl font-normal text-stone-950 mb-2">Sonny Ortiz</h3>
+                        <p class="text-playaOrange text-[10px] font-bold tracking-widest uppercase mb-6">Percussion Maestro & Single Digit Handicap</p>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-8">
+                            Sonny holds down the deep percussion rhythms for Widespread Panic and has been the honorary captain of golf events at Playa since day one. He is combining his love of tight tempos with elite resort golf to guarantee the Breezy block receives a premier setup.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-stone-200">
+                        <span class="text-[10px] text-stone-400 font-bold tracking-widest uppercase block mb-1">Signature Phrase</span>
+                        <span class="text-sm text-stone-900 font-serif italic">"Let the music play, and let the putts roll!"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Itinerary (Clean timeline, flat buttons, sharp design) -->
+    <section id="itinerary" class="bg-[#FAF8F5] py-28 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Chronology of Leisure</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">The Gameplan</h2>
+                <p class="text-stone-600">
+                    Click through the four days of paradise to see how we blend premium morning golf with legendary evening beachfront performances.
+                </p>
+            </div>
+
+            <!-- Tab Container -->
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-between border-b border-stone-300 mb-10 bg-white p-2">
+                    <button onclick="switchTab(1)" id="tab-btn-1" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 bg-stone-900 text-white">
+                        Day 1: Arrival
+                    </button>
+                    <button onclick="switchTab(2)" id="tab-btn-2" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">
+                        Day 2: Scramble
+                    </button>
+                    <button onclick="switchTab(3)" id="tab-btn-3" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">
+                        Day 3: Clinic
+                    </button>
+                    <button onclick="switchTab(4)" id="tab-btn-4" class="flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900">
+                        Day 4: Finale
+                    </button>
+                </div>
+
+                <!-- Day Content Cards -->
+                <!-- Day 1 -->
+                <div id="tab-content-1" class="bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">
+                        <div>
+                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Thursday Kickoff</span>
+                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">Tacos, Tequila, and Tunes</h3>
+                        </div>
+                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 1</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">🌅 Daytime Warmup</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-plane"></i></span>
+                                    <span><strong>12:00 PM:</strong> Premium airport transfers take you straight to Hard Rock. Elite, priority check-in for Breezy room block guests.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-champagne-glasses"></i></span>
+                                    <span><strong>4:00 PM:</strong> Welcome Happy Hour at the Lagoon swim-up bar hosted by Fat Perez. Grab your co-branded golf bundle.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">🎸 Nighttime Jam</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-fire"></i></span>
+                                    <span><strong>7:30 PM:</strong> Beachfront buffet dinner under the tropical sky. All-inclusive premium bars are fully unlocked.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>
+                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 1)</strong> on the beach stage. Your paradise run begins.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div id="tab-content-2" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">
+                        <div>
+                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Friday Showdown</span>
+                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">The Breezy Playa Invitational</h3>
+                        </div>
+                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 2</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">🏆 The Scramble Tournament</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-golf-ball-tee"></i></span>
+                                    <span><strong>8:00 AM:</strong> Shotgun start at Hard Rock Golf Club. 18-hole team scramble. Cold drinks, high-quality carts, and custom contest holes.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-award"></i></span>
+                                    <span><strong>1:30 PM:</strong> Post-round lunch and custom cigar lounge with Fat Perez & Sonny Ortiz. Awarding the Breezy Playa Cup.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">🎸 Nighttime Jam</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-glass-water"></i></span>
+                                    <span><strong>6:00 PM:</strong> Tequila tasting lounge in the concert arena courtyard. Find your rhythm.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>
+                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 2)</strong>. Back to the beach for another legendary performance.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div id="tab-content-3" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">
+                        <div>
+                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Saturday Leisure</span>
+                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">Wedge Clinics & Beach Parties</h3>
+                        </div>
+                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 3</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">🏌️ FP's Masterclass</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-bullseye"></i></span>
+                                    <span><strong>10:30 AM:</strong> "Wedges & Micheladas" on the driving range. Watch FP detail his wedge setup and the famous Euro Step.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-umbrella-beach"></i></span>
+                                    <span><strong>1:00 PM:</strong> Swim-up pool bar session, all-inclusive luxury tacos, and oceanfront recovery.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">🎸 Nighttime Jam</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-moon"></i></span>
+                                    <span><strong>8:00 PM:</strong> Sunset seaside cookout. Gather the crew for fresh local fare and top-shelf pours.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>
+                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Set 3)</strong>. The band is locked in and taking it to another level.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div id="tab-content-4" class="hidden bg-white border border-stone-200 p-8 md:p-12 space-y-10 animate-fadeIn">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-150 pb-6">
+                        <div>
+                            <span class="text-[10px] text-playaOrange font-bold tracking-widest uppercase block mb-1">Sunday Finale</span>
+                            <h3 class="font-serif text-2xl md:text-3xl font-normal text-stone-950">The Grand Outro</h3>
+                        </div>
+                        <span class="border border-stone-300 text-xs text-stone-700 font-bold px-4 py-2 uppercase tracking-wider text-center self-start">Day 4</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-bold text-[11px] text-breezyLightGreen tracking-widest uppercase mb-4">⛳ Leisure Golf & Pool Hangout</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-flag"></i></span>
+                                    <span><strong>9:00 AM:</strong> Optional leisurely 9 holes with your group, or unwind at the luxury wellness center.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-cloud-sun"></i></span>
+                                    <span><strong>2:00 PM:</strong> Paddleboarding in the calm coastal lagoon and sunset margaritas with the Breezy crew.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[11px] text-playaOrange tracking-widest uppercase mb-4">🎸 Nighttime Jam</h4>
+                            <ul class="space-y-4 text-xs md:text-sm text-stone-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-crown"></i></span>
+                                    <span><strong>6:00 PM:</strong> Breezy Block Farewell Dinner with a champagne toast celebrating a historic run.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-stone-800 opacity-60 mt-0.5"><i class="fa-solid fa-guitar"></i></span>
+                                    <span><strong>9:00 PM:</strong> <strong class="text-stone-900 font-semibold">Widespread Panic (Final Set 4)</strong>. Sending it off with the ultimate encore.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Merch Section (Editorial Boutique layout with interactive customizer) -->
+    <section id="merch" class="bg-white py-28 relative border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Limited Run Included</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Exclusive Co-Branded Gear</h2>
+                <p class="text-stone-600">
+                    Book the Breezy Block and receive this custom, limited edition *Breezy x Playa* golf kit. Use our generator below to preview the colorway you want loaded into your welcome pack!
+                </p>
+            </div>
+
+            <!-- Merch Selector Component (Elegant clean white container, flat shadow) -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto bg-[#FAF8F5] border border-stone-200 p-8 lg:p-16 shadow-sm">
+                <!-- Visual Interactive Canvas -->
+                <div class="flex flex-col items-center justify-center space-y-6">
+                    <div class="relative w-full aspect-square max-w-[340px] bg-white rounded-none flex items-center justify-center p-6 border border-stone-200">
+                        <span class="absolute top-4 left-4 text-[9px] font-bold tracking-widest bg-stone-900 text-white px-2.5 py-1 uppercase">Visualizer</span>
+                        
+                        <!-- Interactive Polo SVG -->
+                        <svg id="polo-svg" class="w-full h-auto max-h-[250px] drop-shadow-sm transition-all duration-500 ease-in-out" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background shirt body -->
+                            <path id="polo-body" d="M15,25 L25,18 L35,22 L65,22 L75,18 L85,25 L80,45 L72,43 L72,85 L28,85 L28,43 L20,45 Z" fill="#2a5c4a" class="transition-all duration-500" />
+                            <!-- Collar Left -->
+                            <path id="polo-collar-left" d="M35,22 L50,30 L50,22 L35,17 Z" fill="#1b4d3e" class="transition-all duration-500" />
+                            <!-- Collar Right -->
+                            <path id="polo-collar-right" d="M65,22 L50,30 L50,22 L65,17 Z" fill="#1b4d3e" class="transition-all duration-500" />
+                            <!-- Sleeve Trim Left -->
+                            <path id="polo-sleeve-trim-l" d="M15,25 L20,45 L17,45 L13,25 Z" fill="#ffffff" />
+                            <!-- Sleeve Trim Right -->
+                            <path id="polo-sleeve-trim-r" d="M85,25 L80,45 L83,45 L87,25 Z" fill="#ffffff" />
+                            <!-- Placket (button stripe) -->
+                            <rect x="47.5" y="22" width="5" height="15" fill="#1b4d3e" id="polo-placket" class="transition-all duration-500" />
+                            <!-- Buttons -->
+                            <circle cx="50" cy="26" r="1" fill="#ffffff" />
+                            <circle cx="50" cy="32" r="1" fill="#ffffff" />
+                            <!-- Custom Logo Embroidery -->
+                            <!-- Sun outline + Palm tree simplified -->
+                            <circle cx="62" cy="35" r="3" fill="#FAF8F5" />
+                            <path d="M62,35 L62,40" stroke="#ffffff" stroke-width="0.8" />
+                            <path d="M62,37 Q64,36 66,37" stroke="#ffffff" stroke-width="0.8" />
+                            <path d="M62,37 Q60,36 58,37" stroke="#ffffff" stroke-width="0.8" />
+                        </svg>
+                    </div>
+
+                    <!-- Selected Label display -->
+                    <div class="text-center">
+                        <span class="text-[10px] text-stone-400 font-bold uppercase block mb-1">Active Colorway:</span>
+                        <span id="active-color-name" class="text-base font-bold text-stone-900 tracking-wide">Breezy Pine Green</span>
+                    </div>
+                </div>
+
+                <!-- Interface Options -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-[10px] font-bold text-playaOrange tracking-widest uppercase block mb-2">Configure Your Kit</span>
+                        <h3 class="font-serif text-3xl font-normal text-stone-950">The Breezy Playa Performance Polo</h3>
+                        <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+                            Engineered for high-temperature play, premium moisture-wicking properties, and 4-way stretch. Features custom woven *Playa Sunset* branding on the neck tape and an embroidered dual logo.
+                        </p>
+                    </div>
+
+                    <!-- Color Selector Buttons -->
+                    <div class="space-y-4">
+                        <label class="block text-[10px] font-bold tracking-widest uppercase text-stone-400">Select Fabric Color:</label>
+                        <div class="flex flex-col gap-3">
+                            <button onclick="setMerchColor('green', 'Breezy Pine Green', '#2a5c4a', '#1b4d3e')" class="flex items-center justify-between p-3.5 bg-white border border-stone-400 text-left text-xs font-bold uppercase tracking-wider text-stone-900 transition duration-200" id="btn-color-green">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-4 h-4 rounded-none bg-[#2a5c4a] inline-block border border-stone-200"></span>
+                                    <span>Breezy Pine Green</span>
+                                </div>
+                                <span class="text-[9px] font-bold text-stone-400 uppercase">Selected</span>
+                            </button>
+
+                            <button onclick="setMerchColor('coral', 'Playa Sunset Coral', '#c2410c', '#7c2d12')" class="flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900" id="btn-color-coral">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-4 h-4 rounded-none bg-[#c2410c] inline-block border border-stone-200"></span>
+                                    <span>Playa Sunset Coral</span>
+                                </div>
+                                <span class="text-[9px] font-bold text-stone-400 uppercase">Change Color</span>
+                            </button>
+
+                            <button onclick="setMerchColor('teal', 'Deep Caribbean Teal', '#0f766e', '#115e59')" class="flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900" id="btn-color-teal">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-4 h-4 rounded-none bg-[#0f766e] inline-block border border-stone-200"></span>
+                                    <span>Deep Caribbean Teal</span>
+                                </div>
+                                <span class="text-[9px] font-bold text-stone-400 uppercase">Change Color</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Extra Inclusion Perks Info -->
+                    <div class="bg-white p-5 border border-stone-200 flex items-center gap-4">
+                        <div class="text-stone-700 opacity-75 text-xl">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-800 font-bold block">Also included in the box:</span>
+                            <span class="text-xs text-stone-500 leading-normal">Co-branded Microfiber Golf Towel, 3 custom Breezy Playa Golf Balls, & Premium Cigar Cutter.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Configurator (Clean pricing and sleek inputs) -->
+    <section id="booking" class="bg-[#FAF8F5] py-28 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Live Dynamic Pricing</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Build Your Breezy Block Package</h2>
+                <p class="text-stone-600">
+                    Adjust the selections below to choose your desired room tier, set guest numbers, and estimate your custom price.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-16 max-w-6xl mx-auto">
+                <!-- Left Column: Configurator Form -->
+                <div class="lg:col-span-7 bg-white border border-stone-200 p-8 md:p-12 space-y-10 shadow-sm">
+                    <h3 class="font-serif text-2xl font-normal text-stone-950 border-b border-stone-200 pb-4">1. Choose Accommodations</h3>
+                    
+                    <!-- Room Options List -->
+                    <div class="space-y-4">
+                        <!-- Option 1 -->
+                        <div onclick="selectRoom('deluxe', 2299)" id="card-room-deluxe" class="cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200">
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-stone-950">Deluxe Tropical Room</span>
+                                    <span id="badge-room-deluxe" class="bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
+                                </div>
+                                <p class="text-xs text-stone-500">Standard King/Double beds overlooking lush, tropical resort gardens.</p>
+                            </div>
+                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
+                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
+                                <span class="text-lg font-black text-stone-950">$2,299 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Option 2 -->
+                        <div onclick="selectRoom('lagoon', 2699)" id="card-room-lagoon" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-stone-950">Lagoon-Side Walkout</span>
+                                    <span id="badge-room-lagoon" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
+                                </div>
+                                <p class="text-xs text-stone-500">Direct private terrace access leading right toward the pristine lagoon waters.</p>
+                            </div>
+                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
+                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
+                                <span class="text-lg font-black text-stone-950">$2,699 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Option 3 -->
+                        <div onclick="selectRoom('suite', 3499)" id="card-room-suite" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-stone-950">The Euro-Step Presidential</span>
+                                    <span id="badge-room-suite" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
+                                    <span class="bg-playaOrange text-white text-[9px] font-bold uppercase px-2 py-0.5">VIP Space</span>
+                                </div>
+                                <p class="text-xs text-stone-500">Massive luxury living spaces, private oceanfront hot tub, FP's personal favorite.</p>
+                            </div>
+                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
+                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
+                                <span class="text-lg font-black text-stone-950">$3,499 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Occupancy Selector -->
+                    <div class="pt-8 border-t border-stone-200">
+                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">2. Select Occupancy</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="selectOccupancy(1)" id="btn-occupancy-1" class="border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900">
+                                <i class="fa-solid fa-user mb-2 block text-base opacity-75"></i>
+                                Single Occupancy (1 Guest)
+                            </button>
+                            <button onclick="selectOccupancy(2)" id="btn-occupancy-2" class="border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900">
+                                <i class="fa-solid fa-user-group mb-2 block text-base opacity-75"></i>
+                                Double Occupancy (2 Guests)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Upgrades / Add-ons -->
+                    <div class="pt-8 border-t border-stone-200">
+                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">3. Premium Upgrades</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="add-on-clubs" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">
+                                    <div>
+                                        <span class="text-sm font-bold block text-stone-900">Premium Club Rental Buy-in</span>
+                                        <span class="text-xs text-stone-500">Reserve a brand new set of Callaway clubs for the scramble.</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$150</span>
+                            </label>
+
+                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="add-on-cigar" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">
+                                    <div>
+                                        <span class="text-sm font-bold block text-stone-900">FP's Late Night Tequila & Cigar Experience</span>
+                                        <span class="text-xs text-stone-500">Private tasting lounge with premium single-batch mezcals and vintage cigars.</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$199</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Summary & Contact -->
+                <div class="lg:col-span-5 flex flex-col justify-between space-y-12">
+                    <div class="bg-white border border-stone-200 p-8 space-y-8 shadow-sm">
+                        <h3 class="text-xs font-bold tracking-widest uppercase text-playaOrange">Your Booking Invoice</h3>
+                        
+                        <!-- Details Breakdown -->
+                        <div class="space-y-4 border-b border-stone-200 pb-6 text-xs md:text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-stone-500">Accommodations:</span>
+                                <span id="summary-room-name" class="font-bold text-stone-900">Deluxe Tropical Room</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-stone-500">Occupancy:</span>
+                                <span id="summary-guests" class="font-bold text-stone-900">2 Guests (Double)</span>
+                            </div>
+                            <div id="summary-club-row" class="hidden flex justify-between text-breezyLightGreen">
+                                <span>Add-on: Premium Club Rental</span>
+                                <span class="font-bold">+$150</span>
+                            </div>
+                            <div id="summary-cigar-row" class="hidden flex justify-between text-breezyLightGreen">
+                                <span>Add-on: Cigar/Tequila Lounge</span>
+                                <span class="font-bold">+$199</span>
+                            </div>
+                            <div class="flex justify-between text-xs text-stone-500 bg-[#FAF8F5] p-4 border border-stone-200">
+                                <span class="leading-normal">Includes: Unlimited meals, open bar, 4 nights concert tickets, golf entry, welcome merch bundle.</span>
+                            </div>
+                        </div>
+
+                        <!-- Price Tag -->
+                        <div class="text-center py-6 bg-[#FAF8F5] border border-stone-200">
+                            <span class="text-[10px] text-stone-400 uppercase font-bold tracking-widest block mb-1">Estimated Total Package Cost</span>
+                            <span id="final-price-tag" class="text-4xl md:text-5xl font-black text-stone-950 font-serif">$4,598</span>
+                            <span class="text-[10px] text-stone-400 block mt-2">Pricing calculated for the whole party.</span>
+                        </div>
+
+                        <!-- Urgency Banner -->
+                        <div class="bg-stone-100 border border-stone-300 p-3.5 text-center">
+                            <p class="text-[10px] text-stone-700 font-bold uppercase tracking-wider">
+                                <i class="fa-solid fa-triangle-exclamation mr-1.5 opacity-75"></i> Exclusive Room Block Active
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Lead Capture Form -->
+                    <div class="bg-white border border-stone-200 p-8 space-y-6 shadow-sm">
+                        <h4 class="font-serif text-xl font-normal text-stone-950">Secure Your Space</h4>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Submit your contact details and golf handicap. Our Golf Commissioner will review your submission and connect with you to process the deposit.
+                        </p>
+                        
+                        <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="text" placeholder="First Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <input type="text" placeholder="Last Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                            </div>
+                            <input type="email" placeholder="Email Address" required class="w-full bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="number" placeholder="Golf Handicap" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <select class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-500 focus:border-stone-900 focus:outline-none">
+                                    <option value="" disabled selected>Polo Size</option>
+                                    <option value="S">Small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                    <option value="XL">Extra Large</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-stone-900 hover:bg-breezyGreen py-4 text-xs font-bold tracking-widest uppercase text-white transition duration-300">
+                                Submit Spot Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal (Premium, clean white) -->
+    <div id="success-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-950/40 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white border border-stone-200 p-8 max-w-md w-full text-center space-y-6 shadow-xl transform scale-95 transition-all duration-300">
+            <div class="mx-auto w-16 h-16 bg-stone-100 text-stone-800 rounded-none flex items-center justify-center text-3xl">
+                <i class="fa-solid fa-square-check"></i>
+            </div>
+            
+            <div class="space-y-3">
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase">Request Submitted</span>
+                <h3 class="font-serif text-2xl font-normal text-stone-950">Fellas, You Are Pencil'd In!</h3>
+                <p id="modal-success-msg" class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                    We have temporarily reserved a Deluxe Tropical Room on the Breezy Block. Our commissioner will follow up within 24 hours to confirm.
+                </p>
+            </div>
+
+            <div class="bg-[#FAF8F5] p-4 border border-stone-200">
+                <p class="text-[11px] text-stone-500 leading-normal">Remember: Get the golf clubs polished and pack your dancing shoes. It's going to be a historic run.</p>
+            </div>
+
+            <button onclick="closeModal()" class="w-full bg-stone-900 hover:bg-stone-800 text-white py-3.5 text-xs font-bold uppercase tracking-widest transition duration-200">
+                Return to Page
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 py-16 text-stone-500 text-xs border-t border-stone-850">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <span class="font-black text-white uppercase tracking-widest text-sm">Perez en la Playa</span>
+                <span class="border-l border-stone-800 pl-3">Collaboration Proposal Design</span>
+            </div>
+            <p class="text-center md:text-right">
+                &copy; 2026 Playa Luna Presents & Breezy Golf. Music by Widespread Panic. Single-page proposal mockup.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Logic -->
+    <script>
+        // Itinerary tab switching
+        function switchTab(dayNum) {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`tab-content-${i}`).classList.add('hidden');
+                
+                let btn = document.getElementById(`tab-btn-${i}`);
+                btn.className = "flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 text-stone-500 hover:text-stone-900";
+            }
+            
+            document.getElementById(`tab-content-${dayNum}`).classList.remove('hidden');
+            
+            let activeBtn = document.getElementById(`tab-btn-${dayNum}`);
+            activeBtn.className = "flex-1 min-w-[100px] text-center py-3.5 px-2 text-xs font-bold uppercase tracking-widest transition duration-200 bg-stone-900 text-white";
+        }
+
+        // Merch Customizer Logic
+        // Changes colors of the vector polo elements
+        function setMerchColor(key, name, baseColor, shadowColor) {
+            document.getElementById('active-color-name').innerText = name;
+
+            const poloBody = document.getElementById('polo-body');
+            const poloCollarLeft = document.getElementById('polo-collar-left');
+            const poloCollarRight = document.getElementById('polo-collar-right');
+            const poloPlacket = document.getElementById('polo-placket');
+
+            poloBody.setAttribute('fill', baseColor);
+            poloCollarLeft.setAttribute('fill', shadowColor);
+            poloCollarRight.setAttribute('fill', shadowColor);
+            poloPlacket.setAttribute('fill', shadowColor);
+
+            const buttons = ['green', 'coral', 'teal'];
+            buttons.forEach(b => {
+                const btn = document.getElementById(`btn-color-${b}`);
+                if (b === key) {
+                    btn.className = `flex items-center justify-between p-3.5 bg-white border border-stone-450 text-left text-xs font-bold uppercase tracking-wider text-stone-900 transition duration-200`;
+                } else {
+                    btn.className = `flex items-center justify-between p-3.5 bg-white border border-stone-200 text-left text-xs font-bold uppercase tracking-wider text-stone-500 transition duration-200 hover:border-stone-400 hover:text-stone-900`;
+                }
+            });
+        }
+
+        // Configurator Pricing Calculations
+        let selectedRoomType = 'deluxe';
+        let baseRoomPrice = 2299;
+        let guestsCount = 2;
+        let addOnClubsChecked = false;
+        let addOnCigarChecked = false;
+
+        const roomDetails = {
+            deluxe: { name: "Deluxe Tropical Room", price: 2299 },
+            lagoon: { name: "Lagoon-Side Walkout", price: 2699 },
+            suite: { name: "The Euro-Step Presidential", price: 3499 }
+        };
+
+        function selectRoom(roomKey, price) {
+            selectedRoomType = roomKey;
+            baseRoomPrice = price;
+
+            const keys = ['deluxe', 'lagoon', 'suite'];
+            keys.forEach(k => {
+                const card = document.getElementById(`card-room-${k}`);
+                const badge = document.getElementById(`badge-room-${k}`);
+                if (k === roomKey) {
+                    card.className = "cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200";
+                    badge.classList.remove('hidden');
+                } else {
+                    card.className = "cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400";
+                    badge.classList.add('hidden');
+                }
+            });
+
+            updatePricing();
+        }
+
+        function selectOccupancy(count) {
+            guestsCount = count;
+
+            const btn1 = document.getElementById('btn-occupancy-1');
+            const btn2 = document.getElementById('btn-occupancy-2');
+
+            if (count === 1) {
+                btn1.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";
+                btn2.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";
+            } else {
+                btn1.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";
+                btn2.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";
+            }
+
+            updatePricing();
+        }
+
+        function toggleAddOn() {
+            addOnClubsChecked = document.getElementById('add-on-clubs').checked;
+            addOnCigarChecked = document.getElementById('add-on-cigar').checked;
+
+            updatePricing();
+        }
+
+        function updatePricing() {
+            const roomInfo = roomDetails[selectedRoomType];
+            document.getElementById('summary-room-name').innerText = roomInfo.name;
+            document.getElementById('summary-guests').innerText = `${guestsCount} Guest${guestsCount > 1 ? 's' : ''} (${guestsCount === 1 ? 'Single' : 'Double'})`;
+
+            let totalPrice = (baseRoomPrice * guestsCount);
+            
+            if (addOnClubsChecked) {
+                totalPrice += (150 * guestsCount);
+                document.getElementById('summary-club-row').classList.remove('hidden');
+            } else {
+                document.getElementById('summary-club-row').classList.add('hidden');
+            }
+
+            if (addOnCigarChecked) {
+                totalPrice += (199 * guestsCount);
+                document.getElementById('summary-cigar-row').classList.remove('hidden');
+            } else {
+                document.getElementById('summary-cigar-row').classList.add('hidden');
+            }
+
+            document.getElementById('final-price-tag').innerText = `$${totalPrice.toLocaleString()}`;
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const roomName = roomDetails[selectedRoomType].name;
+            const priceStr = document.getElementById('final-price-tag').innerText;
+            
+            document.getElementById('modal-success-msg').innerHTML = `We have temporarily reserved your <strong>${roomName}</strong> for <strong>${guestsCount} guest(s)</strong>. Your estimated total package is <strong>${priceStr}</strong>. Our Breezy Golf Commissioner will reach out directly to coordinate schedules and finalize details. Let's have a day!`;
+
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
