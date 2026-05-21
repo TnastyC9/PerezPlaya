@@ -59,11 +59,11 @@
                 <a href="#itinerary" class="hover:text-stone-900 transition duration-200">The Schedule</a>
                 <a href="#hosts" class="hover:text-stone-900 transition duration-200">The Lineup</a>
                 <a href="#merch" class="hover:text-stone-900 transition duration-200">Exclusive Merch</a>
-                <a href="#booking" class="hover:text-stone-900 transition duration-200">Lock in Your Room</a>
+                <a href="#addons" class="hover:text-stone-900 transition duration-200">Reserve Add-Ons</a>
             </nav>
 
             <div>
-                <a href="https://panicenlaplaya.com" class="bg-stone-900 hover:bg-breezyGreen text-white px-5 py-2.5 rounded-none text-xs font-bold tracking-widest uppercase transition duration-300">
+                <a href="https://panicenlaplaya.com" target="_blank" class="bg-stone-900 hover:bg-breezyGreen text-white px-5 py-2.5 rounded-none text-xs font-bold tracking-widest uppercase transition duration-300">
                     Book Now
                 </a>
             </div>
@@ -106,11 +106,11 @@
 
                     <!-- Minimalist Editorial CTAs -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="#booking" class="text-center bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                        <a href="https://panicenlaplaya.com" target="_blank" class="text-center bg-stone-900 hover:bg-breezyGreen text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
                             Reserve Your Space
                         </a>
-                        <a href="#itinerary" class="text-center border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
-                            The Gameplan
+                        <a href="#addons" class="text-center border border-stone-300 hover:bg-stone-50 text-stone-800 px-8 py-4 text-xs font-bold tracking-widest uppercase transition duration-300">
+                            Explore Add-Ons
                         </a>
                     </div>
 
@@ -635,174 +635,145 @@
         </div>
     </section>
 
-    <!-- Interactive Configurator (Clean pricing and sleek inputs) -->
-    <section id="booking" class="bg-[#FAF8F5] py-28 relative">
+    <!-- Refactored Premium Add-Ons & Travel Coordination Section -->
+    <section id="addons" class="bg-[#FAF8F5] py-28 relative border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="text-center max-w-3xl mx-auto mb-20">
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Live Dynamic Pricing</span>
-                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Build Your Breezy Block Package</h2>
-                <p class="text-stone-600">
-                    Adjust the selections below to choose your desired room tier, set guest numbers, and estimate your custom price.
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase block mb-3">Playa Enhancements</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-normal text-stone-950 mb-6">Upgrade Your Riviera Maya Run</h2>
+                <p class="text-stone-600 text-sm md:text-base leading-relaxed">
+                    Already secured your all-inclusive package at <strong class="text-stone-900 font-semibold">Panic en la Playa</strong>? Coordinate directly with our travel operations team below to add exclusive Breezy golf experiences, spectator carts, and private tournament lounges to your reservation.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-12 gap-16 max-w-6xl mx-auto">
-                <!-- Left Column: Configurator Form -->
-                <div class="lg:col-span-7 bg-white border border-stone-200 p-8 md:p-12 space-y-10 shadow-sm">
-                    <h3 class="font-serif text-2xl font-normal text-stone-950 border-b border-stone-200 pb-4">1. Choose Accommodations</h3>
+                <!-- Left Column: Upgrade Packages Grid -->
+                <div class="lg:col-span-7 space-y-8">
+                    <h3 class="font-serif text-2xl font-normal text-stone-950 border-b border-stone-200 pb-4">1. Choose Premium Upgrades</h3>
                     
-                    <!-- Room Options List -->
                     <div class="space-y-4">
-                        <!-- Option 1 -->
-                        <div onclick="selectRoom('deluxe', 2299)" id="card-room-deluxe" class="cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200">
-                            <div class="space-y-1">
-                                <div class="flex items-center gap-3">
-                                    <span class="text-lg font-bold text-stone-950">Deluxe Tropical Room</span>
-                                    <span id="badge-room-deluxe" class="bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
+                        <!-- Addon 1 -->
+                        <div onclick="toggleAddonCard('clubs')" id="addon-card-clubs" class="cursor-pointer border border-stone-200 bg-white p-6 transition duration-200 hover:border-stone-400 flex justify-between items-start gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="pt-1">
+                                    <input type="checkbox" id="check-clubs" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900" pointer-events="none">
                                 </div>
-                                <p class="text-xs text-stone-500">Standard King/Double beds overlooking lush, tropical resort gardens.</p>
+                                <div class="space-y-1">
+                                    <span class="text-base font-bold text-stone-950 block">Premium Callaway Club Rental</span>
+                                    <p class="text-xs text-stone-500 leading-relaxed">Avoid heavy oversized bag fees. Reserve a top-of-the-line set of Callaway irons and woods adjusted to your specs, waiting at your golf cart.</p>
+                                </div>
                             </div>
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
-                                <span class="text-lg font-black text-stone-950">$2,299 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            <div class="text-right shrink-0">
+                                <span class="text-sm font-black text-stone-950 block">$150</span>
+                                <span class="text-[9px] text-stone-400 uppercase font-semibold">Per Player</span>
                             </div>
                         </div>
 
-                        <!-- Option 2 -->
-                        <div onclick="selectRoom('lagoon', 2699)" id="card-room-lagoon" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">
-                            <div class="space-y-1">
-                                <div class="flex items-center gap-3">
-                                    <span class="text-lg font-bold text-stone-950">Lagoon-Side Walkout</span>
-                                    <span id="badge-room-lagoon" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
+                        <!-- Addon 2 -->
+                        <div onclick="toggleAddonCard('cigar')" id="addon-card-cigar" class="cursor-pointer border border-stone-200 bg-white p-6 transition duration-200 hover:border-stone-400 flex justify-between items-start gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="pt-1">
+                                    <input type="checkbox" id="check-cigar" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900" pointer-events="none">
                                 </div>
-                                <p class="text-xs text-stone-500">Direct private terrace access leading right toward the pristine lagoon waters.</p>
+                                <div class="space-y-1">
+                                    <span class="text-base font-bold text-stone-950 block">FP's Late Night Tequila & Cigar Experience</span>
+                                    <p class="text-xs text-stone-500 leading-relaxed">Gain exclusive entry to our private, air-conditioned oceanfront lounge featuring high-end aged mezcal flights and FP’s personal premium cigar vault reserve.</p>
+                                </div>
                             </div>
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
-                                <span class="text-lg font-black text-stone-950">$2,699 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            <div class="text-right shrink-0">
+                                <span class="text-sm font-black text-stone-950 block">$199</span>
+                                <span class="text-[9px] text-stone-400 uppercase font-semibold">Per Guest</span>
                             </div>
                         </div>
 
-                        <!-- Option 3 -->
-                        <div onclick="selectRoom('suite', 3499)" id="card-room-suite" class="cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400">
-                            <div class="space-y-1">
-                                <div class="flex items-center gap-3">
-                                    <span class="text-lg font-bold text-stone-950">The Euro-Step Presidential</span>
-                                    <span id="badge-room-suite" class="hidden bg-stone-900 text-white text-[9px] font-bold uppercase px-2 py-0.5">Selected</span>
-                                    <span class="bg-playaOrange text-white text-[9px] font-bold uppercase px-2 py-0.5">VIP Space</span>
+                        <!-- Addon 3 -->
+                        <div onclick="toggleAddonCard('spectator')" id="addon-card-spectator" class="cursor-pointer border border-stone-200 bg-white p-6 transition duration-200 hover:border-stone-400 flex justify-between items-start gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="pt-1">
+                                    <input type="checkbox" id="check-spectator" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900" pointer-events="none">
                                 </div>
-                                <p class="text-xs text-stone-500">Massive luxury living spaces, private oceanfront hot tub, FP's personal favorite.</p>
+                                <div class="space-y-1">
+                                    <span class="text-base font-bold text-stone-950 block">Playa Scramble Spectator Cart Pass</span>
+                                    <p class="text-xs text-stone-500 leading-relaxed">Not playing but want to witness the clinical chirping? Get a customized follow-cart pass, unlimited course beverages, and the co-branded beach bundle.</p>
+                                </div>
                             </div>
-                            <div class="text-right self-stretch sm:self-center flex sm:flex-col justify-between items-center border-t border-stone-200 pt-3 sm:pt-0 sm:border-0">
-                                <span class="text-[10px] text-stone-400 uppercase font-bold sm:hidden">Price:</span>
-                                <span class="text-lg font-black text-stone-950">$3,499 <span class="text-xs text-stone-400 font-normal">/person</span></span>
+                            <div class="text-right shrink-0">
+                                <span class="text-sm font-black text-stone-950 block">$75</span>
+                                <span class="text-[9px] text-stone-400 uppercase font-semibold">Per Cart</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Occupancy Selector -->
-                    <div class="pt-8 border-t border-stone-200">
-                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">2. Select Occupancy</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <button onclick="selectOccupancy(1)" id="btn-occupancy-1" class="border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900">
-                                <i class="fa-solid fa-user mb-2 block text-base opacity-75"></i>
-                                Single Occupancy (1 Guest)
-                            </button>
-                            <button onclick="selectOccupancy(2)" id="btn-occupancy-2" class="border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900">
-                                <i class="fa-solid fa-user-group mb-2 block text-base opacity-75"></i>
-                                Double Occupancy (2 Guests)
-                            </button>
                         </div>
                     </div>
 
-                    <!-- Upgrades / Add-ons -->
-                    <div class="pt-8 border-t border-stone-200">
-                        <h3 class="font-serif text-2xl font-normal text-stone-950 mb-4">3. Premium Upgrades</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">
-                                <div class="flex items-center space-x-3">
-                                    <input type="checkbox" id="add-on-clubs" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">
-                                    <div>
-                                        <span class="text-sm font-bold block text-stone-900">Premium Club Rental Buy-in</span>
-                                        <span class="text-xs text-stone-500">Reserve a brand new set of Callaway clubs for the scramble.</span>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$150</span>
-                            </label>
-
-                            <label class="flex items-center justify-between p-5 bg-[#FAF8F5] border border-stone-200 cursor-pointer hover:border-stone-400 transition">
-                                <div class="flex items-center space-x-3">
-                                    <input type="checkbox" id="add-on-cigar" onchange="toggleAddOn()" class="w-4 h-4 text-stone-900 rounded border-stone-300 focus:ring-stone-900">
-                                    <div>
-                                        <span class="text-sm font-bold block text-stone-900">FP's Late Night Tequila & Cigar Experience</span>
-                                        <span class="text-xs text-stone-500">Private tasting lounge with premium single-batch mezcals and vintage cigars.</span>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-1 uppercase tracking-wider">+$199</span>
-                            </label>
+                    <!-- Quantity Multiplier -->
+                    <div class="pt-6 border-t border-stone-200">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">2. Set Number of Guests for Upgrades</label>
+                        <div class="max-w-[200px]">
+                            <select id="upgrade-quantity" onchange="updateUpgradeCosts()" class="w-full bg-white border border-stone-200 p-3 text-xs text-stone-800 font-bold focus:border-stone-900 focus:outline-none">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Summary & Contact -->
+                <!-- Right Column: Coordination Form & Live Estimated Costs -->
                 <div class="lg:col-span-5 flex flex-col justify-between space-y-12">
                     <div class="bg-white border border-stone-200 p-8 space-y-8 shadow-sm">
-                        <h3 class="text-xs font-bold tracking-widest uppercase text-playaOrange">Your Booking Invoice</h3>
+                        <h3 class="text-xs font-bold tracking-widest uppercase text-playaOrange">Add-On Summary</h3>
                         
-                        <!-- Details Breakdown -->
+                        <!-- Upgrades breakdown list -->
                         <div class="space-y-4 border-b border-stone-200 pb-6 text-xs md:text-sm">
-                            <div class="flex justify-between">
-                                <span class="text-stone-500">Accommodations:</span>
-                                <span id="summary-room-name" class="font-bold text-stone-900">Deluxe Tropical Room</span>
+                            <div id="summary-empty-msg" class="text-stone-400 italic text-center py-4">No upgrades selected. Click on packages to calculate costs.</div>
+                            
+                            <div id="summary-clubs-row" class="hidden flex justify-between text-stone-900 font-semibold">
+                                <span>Premium Club Rentals:</span>
+                                <span id="summary-clubs-price" class="font-bold">+$0</span>
                             </div>
-                            <div class="flex justify-between">
-                                <span class="text-stone-500">Occupancy:</span>
-                                <span id="summary-guests" class="font-bold text-stone-900">2 Guests (Double)</span>
+                            <div id="summary-cigar-row" class="hidden flex justify-between text-stone-900 font-semibold">
+                                <span>Tequila & Cigar Experience:</span>
+                                <span id="summary-cigar-price" class="font-bold">+$0</span>
                             </div>
-                            <div id="summary-club-row" class="hidden flex justify-between text-breezyLightGreen">
-                                <span>Add-on: Premium Club Rental</span>
-                                <span class="font-bold">+$150</span>
-                            </div>
-                            <div id="summary-cigar-row" class="hidden flex justify-between text-breezyLightGreen">
-                                <span>Add-on: Cigar/Tequila Lounge</span>
-                                <span class="font-bold">+$199</span>
-                            </div>
-                            <div class="flex justify-between text-xs text-stone-500 bg-[#FAF8F5] p-4 border border-stone-200">
-                                <span class="leading-normal">Includes: Unlimited meals, open bar, 4 nights concert tickets, golf entry, welcome merch bundle.</span>
+                            <div id="summary-spectator-row" class="hidden flex justify-between text-stone-900 font-semibold">
+                                <span>Spectator Cart Passes:</span>
+                                <span id="summary-spectator-price" class="font-bold">+$0</span>
                             </div>
                         </div>
 
-                        <!-- Price Tag -->
+                        <!-- Live Cost Display -->
                         <div class="text-center py-6 bg-[#FAF8F5] border border-stone-200">
-                            <span class="text-[10px] text-stone-400 uppercase font-bold tracking-widest block mb-1">Estimated Total Package Cost</span>
-                            <span id="final-price-tag" class="text-4xl md:text-5xl font-black text-stone-950 font-serif">$4,598</span>
-                            <span class="text-[10px] text-stone-400 block mt-2">Pricing calculated for the whole party.</span>
-                        </div>
-
-                        <!-- Urgency Banner -->
-                        <div class="bg-stone-100 border border-stone-300 p-3.5 text-center">
-                            <p class="text-[10px] text-stone-700 font-bold uppercase tracking-wider">
-                                <i class="fa-solid fa-triangle-exclamation mr-1.5 opacity-75"></i> Exclusive Room Block Active
-                            </p>
+                            <span class="text-[10px] text-stone-400 uppercase font-bold tracking-widest block mb-1">Estimated Upgrade Cost</span>
+                            <span id="addon-total-price" class="text-4xl md:text-5xl font-black text-stone-950 font-serif">$0</span>
+                            <span class="text-[10px] text-stone-400 block mt-2">Adjusted for <span id="summary-quantity-label" class="font-semibold text-stone-700">2 guests</span>.</span>
                         </div>
                     </div>
 
-                    <!-- Lead Capture Form -->
+                    <!-- Upgrade Coordination Form -->
                     <div class="bg-white border border-stone-200 p-8 space-y-6 shadow-sm">
-                        <h4 class="font-serif text-xl font-normal text-stone-950">Secure Your Space</h4>
+                        <h4 class="font-serif text-xl font-normal text-stone-950">Submit Request to Travel Team</h4>
                         <p class="text-stone-500 text-xs leading-relaxed">
-                            Submit your contact details and golf handicap. Our Golf Commissioner will review your submission and connect with you to process the deposit.
+                            Already booked your room? Enter your details below. Our team will verify your reservation and add these custom options directly to your schedule.
                         </p>
                         
-                        <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <form id="upgrade-request-form" onsubmit="handleUpgradeSubmit(event)" class="space-y-4">
                             <div class="grid grid-cols-2 gap-3">
-                                <input type="text" placeholder="First Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
-                                <input type="text" placeholder="Last Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <input id="form-first" type="text" placeholder="First Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <input id="form-last" type="text" placeholder="Last Name" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
                             </div>
-                            <input type="email" placeholder="Email Address" required class="w-full bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                            <input id="form-email" type="email" placeholder="Email Address" required class="w-full bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                            
+                            <div class="space-y-2">
+                                <input id="form-ref" type="text" placeholder="Playa Booking Reference # (e.g., PL-58291)" class="w-full bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <label class="flex items-center space-x-2 px-1 cursor-pointer">
+                                    <input id="check-not-booked" type="checkbox" onchange="toggleBookingRef()" class="w-3.5 h-3.5 text-stone-900 border-stone-300 focus:ring-stone-900">
+                                    <span class="text-[10px] text-stone-500">I haven't completed my Panic en la Playa room booking yet.</span>
+                                </label>
+                            </div>
+
                             <div class="grid grid-cols-2 gap-3">
-                                <input type="number" placeholder="Golf Handicap" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
-                                <select class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-500 focus:border-stone-900 focus:outline-none">
+                                <input id="form-handicap" type="number" placeholder="Golf Handicap" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:border-stone-900 focus:outline-none">
+                                <select id="form-size" required class="bg-[#FAF8F5] border border-stone-200 px-4 py-3 text-xs text-stone-500 focus:border-stone-900 focus:outline-none">
                                     <option value="" disabled selected>Polo Size</option>
                                     <option value="S">Small</option>
                                     <option value="M">Medium</option>
@@ -813,7 +784,7 @@
                             </div>
                             
                             <button type="submit" class="w-full bg-stone-900 hover:bg-breezyGreen py-4 text-xs font-bold tracking-widest uppercase text-white transition duration-300">
-                                Submit Spot Request
+                                Request Upgrades
                             </button>
                         </form>
                     </div>
@@ -830,10 +801,10 @@
             </div>
             
             <div class="space-y-3">
-                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase">Request Submitted</span>
-                <h3 class="font-serif text-2xl font-normal text-stone-950">Fellas, You Are Pencil'd In!</h3>
+                <span class="text-xs font-bold text-playaOrange tracking-widest uppercase">Request Received</span>
+                <h3 class="font-serif text-2xl font-normal text-stone-950">Add-On Request Lodged!</h3>
                 <p id="modal-success-msg" class="text-stone-600 text-xs md:text-sm leading-relaxed">
-                    We have temporarily reserved a Deluxe Tropical Room on the Breezy Block. Our commissioner will follow up within 24 hours to confirm.
+                    Our travel coordination department has registered your premium Breezy event upgrade requests.
                 </p>
             </div>
 
@@ -903,95 +874,128 @@
             });
         }
 
-        // Configurator Pricing Calculations
-        let selectedRoomType = 'deluxe';
-        let baseRoomPrice = 2299;
-        let guestsCount = 2;
-        let addOnClubsChecked = false;
-        let addOnCigarChecked = false;
-
-        const roomDetails = {
-            deluxe: { name: "Deluxe Tropical Room", price: 2299 },
-            lagoon: { name: "Lagoon-Side Walkout", price: 2699 },
-            suite: { name: "The Euro-Step Presidential", price: 3499 }
+        // Interactive Addon Selections & Live Estimated costs
+        let addonsSelected = {
+            clubs: false,
+            cigar: false,
+            spectator: false
         };
 
-        function selectRoom(roomKey, price) {
-            selectedRoomType = roomKey;
-            baseRoomPrice = price;
+        const addonPricing = {
+            clubs: 150,
+            cigar: 199,
+            spectator: 75
+        };
 
-            const keys = ['deluxe', 'lagoon', 'suite'];
-            keys.forEach(k => {
-                const card = document.getElementById(`card-room-${k}`);
-                const badge = document.getElementById(`badge-room-${k}`);
-                if (k === roomKey) {
-                    card.className = "cursor-pointer border-2 border-stone-900 bg-[#FAF8F5] p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200";
-                    badge.classList.remove('hidden');
-                } else {
-                    card.className = "cursor-pointer border border-stone-200 bg-white p-6 rounded-none flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition duration-200 hover:border-stone-400";
-                    badge.classList.add('hidden');
-                }
-            });
-
-            updatePricing();
-        }
-
-        function selectOccupancy(count) {
-            guestsCount = count;
-
-            const btn1 = document.getElementById('btn-occupancy-1');
-            const btn2 = document.getElementById('btn-occupancy-2');
-
-            if (count === 1) {
-                btn1.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";
-                btn2.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";
-            } else {
-                btn1.className = "border border-stone-200 bg-white p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-500 hover:text-stone-900";
-                btn2.className = "border-2 border-stone-900 bg-[#FAF8F5] p-5 text-center text-xs font-bold uppercase tracking-wider transition duration-200 text-stone-900";
-            }
-
-            updatePricing();
-        }
-
-        // Toggle add-ons
-        function toggleAddOn() {
-            addOnClubsChecked = document.getElementById('add-on-clubs').checked;
-            addOnCigarChecked = document.getElementById('add-on-cigar').checked;
-
-            updatePricing();
-        }
-
-        function updatePricing() {
-            const roomInfo = roomDetails[selectedRoomType];
-            document.getElementById('summary-room-name').innerText = roomInfo.name;
-            document.getElementById('summary-guests').innerText = `${guestsCount} Guest${guestsCount > 1 ? 's' : ''} (${guestsCount === 1 ? 'Single' : 'Double'})`;
-
-            let totalPrice = (baseRoomPrice * guestsCount);
+        function toggleAddonCard(addonId) {
+            addonsSelected[addonId] = !addonsSelected[addonId];
             
-            if (addOnClubsChecked) {
-                totalPrice += (150 * guestsCount);
-                document.getElementById('summary-club-row').classList.remove('hidden');
+            // Sync checkbox
+            document.getElementById(`check-${addonId}`).checked = addonsSelected[addonId];
+
+            // Sync visual outline styles
+            const card = document.getElementById(`addon-card-${addonId}`);
+            if (addonsSelected[addonId]) {
+                card.classList.remove('border-stone-200');
+                card.classList.add('border-stone-900', 'bg-[#FAF8F5]', 'border-2');
             } else {
-                document.getElementById('summary-club-row').classList.add('hidden');
+                card.classList.add('border-stone-200');
+                card.classList.remove('border-stone-900', 'bg-[#FAF8F5]', 'border-2');
             }
 
-            if (addOnCigarChecked) {
-                totalPrice += (199 * guestsCount);
+            updateUpgradeCosts();
+        }
+
+        function updateUpgradeCosts() {
+            const qty = parseInt(document.getElementById('upgrade-quantity').value);
+            document.getElementById('summary-quantity-label').innerText = `${qty} guest${qty > 1 ? 's' : ''}`;
+
+            let subtotal = 0;
+            let hasAnySelection = false;
+
+            // Compute clubs row
+            if (addonsSelected.clubs) {
+                const cost = addonPricing.clubs * qty;
+                subtotal += cost;
+                hasAnySelection = true;
+                document.getElementById('summary-clubs-price').innerText = `+$${cost.toLocaleString()}`;
+                document.getElementById('summary-clubs-row').classList.remove('hidden');
+            } else {
+                document.getElementById('summary-clubs-row').classList.add('hidden');
+            }
+
+            // Compute cigar row
+            if (addonsSelected.cigar) {
+                const cost = addonPricing.cigar * qty;
+                subtotal += cost;
+                hasAnySelection = true;
+                document.getElementById('summary-cigar-price').innerText = `+$${cost.toLocaleString()}`;
                 document.getElementById('summary-cigar-row').classList.remove('hidden');
             } else {
                 document.getElementById('summary-cigar-row').classList.add('hidden');
             }
 
-            document.getElementById('final-price-tag').innerText = `$${totalPrice.toLocaleString()}`;
+            // Compute spectator row
+            if (addonsSelected.spectator) {
+                const cost = addonPricing.spectator * qty;
+                subtotal += cost;
+                hasAnySelection = true;
+                document.getElementById('summary-spectator-price').innerText = `+$${cost.toLocaleString()}`;
+                document.getElementById('summary-spectator-row').classList.remove('hidden');
+            } else {
+                document.getElementById('summary-spectator-row').classList.add('hidden');
+            }
+
+            // Toggle empty message
+            if (hasAnySelection) {
+                document.getElementById('summary-empty-msg').classList.add('hidden');
+            } else {
+                document.getElementById('summary-empty-msg').classList.remove('hidden');
+            }
+
+            // Update DOM pricing total
+            document.getElementById('addon-total-price').innerText = `$${subtotal.toLocaleString()}`;
         }
 
-        function handleFormSubmit(event) {
+        function toggleBookingRef() {
+            const isChecked = document.getElementById('check-not-booked').checked;
+            const refInput = document.getElementById('form-ref');
+            
+            if (isChecked) {
+                refInput.value = "";
+                refInput.disabled = true;
+                refInput.classList.add('opacity-50');
+                refInput.placeholder = "Not Booked Yet - Our Travel team will help coordinate registration";
+            } else {
+                refInput.disabled = false;
+                refInput.classList.remove('opacity-50');
+                refInput.placeholder = "Playa Booking Reference # (e.g., PL-58291)";
+            }
+        }
+
+        function handleUpgradeSubmit(event) {
             event.preventDefault();
             
-            const roomName = roomDetails[selectedRoomType].name;
-            const priceStr = document.getElementById('final-price-tag').innerText;
+            const qty = parseInt(document.getElementById('upgrade-quantity').value);
+            const totalStr = document.getElementById('addon-total-price').innerText;
+            const refNo = document.getElementById('form-ref').value;
+            const notBooked = document.getElementById('check-not-booked').checked;
             
-            document.getElementById('modal-success-msg').innerHTML = `We have temporarily reserved your <strong>${roomName}</strong> for <strong>${guestsCount} guest(s)</strong>. Your estimated total package is <strong>${priceStr}</strong>. Our Breezy Golf Commissioner will reach out directly to coordinate schedules and finalize details. Let's have a day!`;
+            // Build dynamic text detailing requested upgrades
+            let additionsList = [];
+            if (addonsSelected.clubs) additionsList.push('Premium Callaway Club Rentals');
+            if (addonsSelected.cigar) additionsList.push('FP\'s Late Night Tequila & Cigar Experience');
+            if (addonsSelected.spectator) additionsList.push('Spectator Follow-Cart Passes');
+
+            let selectionText = additionsList.length > 0 
+                ? `your request for <strong>${additionsList.join(', ')}</strong> adjusted for <strong>${qty} guest(s)</strong>`
+                : "your details and registration inquiry";
+
+            let referenceText = notBooked 
+                ? "<br><br>Since you checked that you haven't booked your main room package yet, our coordination division will reach out to walk you through securing your festival room before processing these custom add-ons." 
+                : `<br><br>We have matched this request to Booking Reference <strong>${refNo || 'PL-PENDING'}</strong>.`;
+
+            document.getElementById('modal-success-msg').innerHTML = `Fellas, we've registered ${selectionText}. Estimated upgrade package subtotal is <strong>${totalStr}</strong>. Our travel coordinating team will follow up at your provided email to confirm your itinerary modifications. Have a day! ${referenceText}`;
 
             const modal = document.getElementById('success-modal');
             modal.classList.remove('hidden');
@@ -1000,6 +1004,11 @@
         function closeModal() {
             document.getElementById('success-modal').classList.add('hidden');
         }
+
+        // Initialize Pricing Summary on Load
+        window.onload = function() {
+            updateUpgradeCosts();
+        };
     </script>
 </body>
 </html>
